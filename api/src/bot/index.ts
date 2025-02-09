@@ -3,6 +3,7 @@ import { config } from "dotenv";
 import { WalletManager } from "./wallet";
 import { SubscriptionManager } from "./subscriptionManager";
 import { showOutput } from "./output";
+import { TradeReport } from "./tradeReport";
 config();
 
 export class SniperBot {
@@ -14,12 +15,6 @@ export class SniperBot {
     // Configuration
     const SOLANA_RPC_URL = process.env.SOLANA_RPC_URL!;
     const PRIVATE_KEY = process.env.PRIVATE_KEY!;
-    const BUY_AMOUNT_SOL = Number(process.env.BUY_AMOUNT_SOL!);
-    const PROFIT_TARGET_1 = Number(process.env.PROFIT_TARGET_1!);
-    const PROFIT_TARGET_2 = Number(process.env.PROFIT_TARGET_2!);
-    const TRAILING_STOP = Number(process.env.TRAILING_STOP!);
-    const MIN_MARKET_CAP_SOL = Number(process.env.MIN_MARKET_CAP_SOL!);
-    const MIN_LIQUIDITY_SOL = Number(process.env.MIN_LIQUIDITY_SOL!);
 
     // Initialize components
     this.connection = new Connection(SOLANA_RPC_URL, "confirmed");
@@ -47,11 +42,10 @@ export class SniperBot {
     })();
 
     // Generate trade report
-    showOutput({
-      activeTokens: this.subscriptionManager.getTradingHistory(),
-      walletManager: this.walletManager,
-      text: `🧾 Trade report: ${this.walletManager.getInitialBalance()} SOL -> ${this.walletManager.getBalance()} SOL`,
-    });
+    await TradeReport.generate(
+      this.subscriptionManager.getTradingHistory(),
+      this.walletManager
+    );
 
     process.exit(0);
   }

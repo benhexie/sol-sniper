@@ -9,6 +9,7 @@ const MAX_ACTIVE_TRADES = Number(process.env.MAX_ACTIVE_TRADES!);
 const MAX_UNVERIFIED_TRADES = Number(process.env.MAX_UNVERIFIED_TRADES!);
 const MAX_TOKEN_AGE = Number(process.env.MAX_TOKEN_AGE!);
 const MIN_LIQUIDITY_SOL = Number(process.env.MIN_LIQUIDITY_SOL!);
+const BUY_AMOUNT_SOL = Number(process.env.BUY_AMOUNT_SOL!);
 
 export interface Token {
   mint: string;
@@ -156,8 +157,8 @@ export class SubscriptionManager {
         token.hit200 = true;
         token.timeTo200 =
           (new Date().getTime() - token.createdAt.getTime()) / 1000;
-        if (Math.floor(Number(token.timeTo150)) > 1)
-          this.trader.sellToken(token);
+        // if (Math.floor(Number(token.timeTo150)) > 1)
+        //   this.trader.sellToken(token);
       }
       if (
         !token.rugged &&
@@ -185,9 +186,11 @@ export class SubscriptionManager {
 
         // Only exit if we're at a loss greater than 10%
         if (
-          (Number(token.currentPrice) - Number(token.buyPrice)) /
-            Number(token.buyPrice) <=
-          -0.1
+          BUY_AMOUNT_SOL +
+            ((Number(token.currentPrice) - Number(token.buyPrice)) /
+              Number(token.buyPrice)) *
+              BUY_AMOUNT_SOL <=
+          0.01
         )
           return;
 

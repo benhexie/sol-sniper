@@ -1,5 +1,10 @@
 import { Token } from "./subscriptionManager";
 import { WalletManager } from "./wallet";
+import { config } from "dotenv";
+
+config({ path: `${__dirname}/../../.env` });
+
+const BUY_AMOUNT_SOL = Number(process.env.BUY_AMOUNT_SOL!);
 
 let lastOutput: string = "";
 
@@ -31,6 +36,14 @@ export const showOutput = async ({
     TT4x: token.timeTo400,
     Rugged: token.rugged ? "🚨" : "--",
     TTR: token.timeToRug,
+    "Trade Summary": `${BUY_AMOUNT_SOL} SOL -> ${
+      token.sellPrice
+        ? BUY_AMOUNT_SOL +
+          ((Number(token.sellPrice) - Number(token.buyPrice)) /
+            Number(token.buyPrice)) *
+            BUY_AMOUNT_SOL
+        : "--"
+    } SOL`,
   }));
   if (table.length === 0) {
     table = [
@@ -46,6 +59,7 @@ export const showOutput = async ({
         TT4x: "",
         Rugged: "--",
         TTR: "",
+        "Trade Summary": `${BUY_AMOUNT_SOL} SOL -> -- SOL`,
       },
     ];
   }

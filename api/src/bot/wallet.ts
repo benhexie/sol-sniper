@@ -37,7 +37,7 @@ export class WalletManager {
   async getBalance(): Promise<number> {
     if (this.checkedBalance) return this.balance;
     // await this.setBalance();
-    this.balance = 0.3; // TODO: remove this
+    this.balance = 0.6; // TODO: remove this
     this.checkedBalance = true;
     this.initialBalance = this.balance;
     return this.balance;
