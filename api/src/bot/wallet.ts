@@ -6,7 +6,7 @@ export class WalletManager {
   private wallet: Keypair;
   private balance: number = 0;
   private checkedBalance: boolean = false;
-  solPriceInUSD: number = 0;
+  public solPriceInUSD: number = 0;
 
   constructor(connection: Connection, privateKey: string) {
     this.connection = connection;

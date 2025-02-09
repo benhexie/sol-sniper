@@ -21,9 +21,14 @@ export const showOutput = async ({
         ? "--"
         : (token.marketCapSol * walletManager.solPriceInUSD).toFixed(2) +
           " USD",
-    "1.5x": token.hit50 ? "🟢" : "🔴",
-    "2x": token.hit100 ? "🟢" : "🔴",
-    Rugged: token.rugged ? "🚨" : "",
+    "1.5x": token.hit150 ? "🟢" : "🔴",
+    "TT1.5x": token.timeTo150,
+    "2x": token.hit200 ? "🟢" : "🔴",
+    TT2x: token.timeTo200,
+    "4x": token.hit400 ? "🟢" : "🔴",
+    TT4x: token.timeTo400,
+    Rugged: token.rugged ? "🚨" : "--",
+    TTR: token.timeToRug,
   }));
   if (table.length === 0) {
     table = [
@@ -32,8 +37,13 @@ export const showOutput = async ({
         Name: "--",
         "Market Cap": "--",
         "1.5x": "--",
+        "TT1.5x": "",
         "2x": "--",
+        TT2x: "",
+        "4x": "--",
+        TT4x: "",
         Rugged: "--",
+        TTR: "",
       },
     ];
   }

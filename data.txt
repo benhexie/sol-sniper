@@ -1,0 +1,513 @@
+┌─────────┬────────────────────────────────────────────────┬────────────────────────────────────┬────────────────┬──────┬─────────┬──────┬─────────┬──────┬────────┬──────┬────────┬────────┬─────────┐
+│ (index) │ CA                                             │ Name                               │ Market Cap     │ 1.5x │ TT1.5x  │ 2x   │ TT2x    │ 4x   │ TT4x   │ 5x   │ TT5x   │ Rugged │ TTR     │
+├─────────┼────────────────────────────────────────────────┼────────────────────────────────────┼────────────────┼──────┼─────────┼──────┼─────────┼──────┼────────┼──────┼────────┼────────┼─────────┤
+│ 0       │ '4TaVYhw21Sx7egAtpAnMimqEDV654jHzVm5vrNPXpump' │ 'D.O.G.E. CLOCK'                   │ '5736.67 USD'  │ '🟢' │ 17.71   │ '🟢' │ 36.225  │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 1       │ '2tYpLGb6a7WWbNms9cjLpyVArLKrwsVCavVeDDnDpump' │ 'smol musk'                        │ '9110.91 USD'  │ '🟢' │ 142.495 │ '🟢' │ 275.865 │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 2       │ '9S1D5SQszocw2eqhvykHSRc9c1H5Xv6JCzBUh5WBpump' │ 'Space Ai'                         │ '40165.89 USD' │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 3       │ 'BYLcz2XDXNiwHmGMg8kEZ3mSKWgGz765GLHNWS1npump' │ 'smol ye'                          │ '5523.64 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 4       │ '4UXfkbuKQPGj21KhwGdeKknTzAJsReGR7xTJkVpgpump' │ 'BEASTOK'                          │ '6233.53 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 5       │ '5BM2fzL5V8FWPLrxpNA2e7hmVErKqwxTcYrYLmTSpump' │ 'Clinq.Gold Token'                 │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 6       │ 'B1mcPvBWwLMXuwPn3b4Gny8SoXNHBEdGNiGSLbV4pump' │ 'Sourceful'                        │ '5511.12 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 7       │ 'CrJ9f87aDMcuo3V3197PxxQQSDVCeaze6VPUaZmAVGbP' │ 'mlg car'                          │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 8       │ '54jzBSbVCrDGfW1UiMVw9SpEjEmurT9mLQcAd2JTpump' │ 'RIP Playstation Network'          │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 9       │ 'HRndZChBDqX1pArswGfeiGutygMvVMhkRdgiQUTtpump' │ 'MAKE ISRAEL GREAT AGAIN'          │ '5497.85 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 10      │ '6wwDsqa3WmbtbSrp7KLX48beNtuXNqiJEXHn46etXZz6' │ 'beeeep beeep !! '                 │ '5498.19 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ '🚨'   │ 173.88  │
+│ 11      │ '9ASBSYYd7LkV1Qp7ibTtQFFCCzUVgJxgNR7tip83pump' │ 'YE 卍'                            │ '5494.22 USD'  │ '🟢' │ 7.329   │ '🟢' │ 12.336  │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │W
+│ 12      │ 'CnCE6tzKrV3Co4BbxDi4AcRX1nvoDgrep2BwQusWfU4c' │ 'musk new client'                  │ '5511.07 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 13      │ 'HCJuFNG3KfKLLcFtd6ARvxef1QNhbCoS9GDwqgFpump'  │ 'Solova AI'                        │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 14      │ '5YhS6sXT2wBSB8yGFqaY4TrEJXgBhX1BsMAvg94upump' │ 'HelpMyBRAND (LIVE)'               │ '5503.82 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 15      │ 'HaAEZf4xM6rxWMYQ2pW9aYondUgqcmDnCsbkKThJpump' │ 'SOLANA TERMINAL'                  │ '6625.52 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 16      │ '4vqPT7MbY69qHpAjoVZYzHmxqBmPEhY8FqvPsp8Dpump' │ 'Kitty Penguin'                    │ '5530.91 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 17      │ 'B6D5cBTFYUEwvuxoAa7kgJhnvUG8qYnzBPqzQxZrpump' │ 'YE solana'                        │ '5512.33 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 18      │ '4wHYG5N65S7Pa7mxrYkGZFjuaFPCWr1TSKv4M3erpump' │ 'ORINA'                            │ '5496.65 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 19      │ '5cf4794Emh4xBe4AsuJT6z2SWH47f5QEHhjJuv8Spump' │ 'ELON USAID'                       │ '5866.61 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 20      │ '3Voj4QZcZrWEaVvsMhiB4Dm5hNKhQRQeLJyjjN5cpump' │ 'fastest duck to 10m MC'           │ '5499.53 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 21      │ 'H6Tyw8G28EcZ2rsZUxgMxKA2aCALwPEsZ3sqn6AJpump' │ 'Radpiexyz_io'                     │ '5499.93 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 22      │ 'BJXVBG5KcusN3jxHyBHtffD56jPHHVMCnWJvSBhRpump' │ 'Small DOGE'                       │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 23      │ '5eR55PAhoFVwvvNtAfMn2piieUikaoCJtyFNQzBepump' │ 'HEYPMI'                           │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 24      │ '6G43n6y9mwTWZBPDWPv3M8DvZgSfz1r5aDecp5DPpump' │ 'Fart girl 2.0 '                   │ '5536.25 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 25      │ '3nU6f1ChNq7kAqirx1mGK7CfdNa3T8Z39AQUCKB5pump' │ 'Tutorial to get rich in crypto '  │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 26      │ '6X3vLmrkDYZuvg7dwfv3n55MiFRYfPtA89rch7pJpump' │ 'Hide the Pain Harold'             │ '8881.03 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 27      │ 'H1ZqBkAJ6HT6WvpVKeohT5xhq6WjpJkoqjPTW1Vwpump' │ 'fastest duck to 10m MC'           │ '6268.25 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 28      │ '5RNNAZciSWwGLvpNywm5SSnUzb8WwiRVDbr7rkZ6pump' │ 'CELIO'                            │ '6251.20 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 29      │ 'DjSgNVhPNsw1La756CezqxvjR7Hm1MpS5W3N3rEdivGd' │ 'beeeep beeep !!'                  │ '5513.75 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 30      │ 'Hziyg9z4i3EfHrbitHAoeCwzXt5ajQJrHiQueTEXpump' │ 'PUMP Tracking'                    │ '5507.00 USD'  │ '🟢' │ 21.975  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 31      │ 'GHt4AU1hFRJSpCbDVPpJUXg4jRRUeeHwzxHGGWbrpump' │ 'YE HH-01'                         │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 32      │ 'BmW1fwVNwR6aEx6QwLv6nustcQWuKCVm4LFNa8H1pump' │ 'Sentio AI'                        │ '5520.70 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 33      │ '2wHjMEsQPnuM756kFRj85TCby8BiWAit8vqecVJTpump' │ 'pipicat'                          │ '5500.51 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 34      │ '3bKdrFnhr59eiRKuvXwGHWF1XZDCC1G2iKXKRpvRpump' │ 'WINNIE COIN'                      │ '6985.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 35      │ 'Nzvba7L7QUS4EsK4MQQujR9XHcre27rTwpk26Lepump'  │ 'Biggest Buy Bot'                  │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 36      │ 'H6G5vqVeLWhQ4C3FoX7dsD5f9wRfvoLjuT95ad5qpump' │ 'First Pepe coin ever'             │ '13908.74 USD' │ '🟢' │ 87.597  │ '🟢' │ 240.91  │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 37      │ 'CXet5WnwbvBCR7W2aUjW1RtFSLj9wTaRg5viuAZupump' │ 'Lil Miquela, First AI Influencer' │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 38      │ 'Ac5jTQbGTxZBsuW3ayEU888nQmcpBPj4fYK9gYaepump' │ 'Silly goose'                      │ '5497.40 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 39      │ '28M38T7MuKSSc46YpQxP5zHK8yuZjeVmwWoT7EfDpump' │ 'craziest dog to 10m market cap'   │ '5504.41 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 40      │ 'HXS3YWH6tcYCHq4EFi7MFFuBx2h5xbA5NTozr66RdVxZ' │ 'Üzüm'                             │ '5494.22 USD'  │ '🟢' │ 29.127  │ '🟢' │ 87.199  │ '🔴' │ ''     │ '🔴' │ ''     │ '🚨'   │ 125.241 │
+│ 41      │ '2y5YShCc5gvLFiVDFnnXjV1wxQDqCcj4KWs63gR4F2Nu' │ 'TIKTOK DISAPPEARS'                │ '5518.17 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 42      │ '7n9pHXehjB6BpGHh3n9Z7y2AVaLvX64ojGYZtjvRqauH' │ 'tiktok banned'                    │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 43      │ 'CWd4teEop9ksoVHH8taBzHK22CBMbVW7MhmbdnXiaxHW' │ 'tiktok cto'                       │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 44      │ 'EMJPvGAFWqzg6brktdjKwXvB7zsebNjg8TiYGuwwpump' │ 'craziest dog to 10m market cap'   │ '5504.51 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 45      │ 'Hriy7QagNjFaq8NGJWHLPBahGAAqDpRE2hzSWaCf4Pb3' │ 'read it backwards'                │ '13253.58 USD' │ '🟢' │ 55.372  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 46      │ '9R7t5f3ndgS25vaGLWUFgVUadYpKG4W8kXLxzuNwpump' │ 'YZY'                              │ '7085.78 USD'  │ '🟢' │ 27.466  │ '🟢' │ 28.416  │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 47      │ '94kH11nC4Ar1NcXXLUmMoeWcYKcENdVc5GEwagKfpump' │ 'FederalEmergencyManagementAgency' │ '5519.34 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 48      │ '38ZP5DfXD9MSuUC1mLnSLcBoCJZJZzecJPZkk4Gipump' │ 'UNC BOB READY 2 FUCK'             │ '5501.55 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 49      │ '3S1xVMohZQF9LrpJ11f9eXskazu9xnNfAengHGnkpump' │ 'read it backwards'                │ '5501.83 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 50      │ '4xxdqWVKGP8XghgjpTwbUW2BHnc4pwPLobccJjB9pump' │ 'Faded All Runners Today'          │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 51      │ 'HD7u1qL74Ywr2PfmT8nUKRNw2vY2FGoPaDEFMoWJwTuz' │ 'First Patent Dog Solana '         │ '5501.55 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 52      │ '7jjHn3EhU7cA6SsVVQn2txUGrtA3AHXWZxEGNajopump' │ 'tbt'                              │ '5501.55 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 53      │ 'GHWZ3amzyZMjpG33jPb8Xu4ckgAcYAM5DuJetkjspump' │ '🪑 + 🔥 🪑 + 🔥 '                 │ '5780.02 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 54      │ 'FV9Mx2JDz2zoDZXRZGHZ4w1DUo8oiMAQThhtDkGqpump' │ 'BABY SOLANA TST'                  │ '5501.91 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 55      │ 'CgMo8T5juKhZeEK4UGxDsbMkFtLgh3bwY4HZcGf6pump' │ 'Üzüm'                             │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 56      │ 'FMuswjZfGRZ2ZoikbT4k5vRxsnqQ5Z1VcBPbMaTjpump' │ 'Dog with a spoon'                 │ '5610.35 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 57      │ 'HLLwxdAv8ymBHHcLEwAHLP2TQz8RmZZFdPVMn2Wypump' │ 'TRUMP'                            │ '6255.58 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 58      │ 'He49dXWVADrjzG76jx5EzTPhXyc3P1B8RmQceWDppump' │ '卍ye'                             │ '5594.88 USD'  │ '🟢' │ 7.611   │ '🟢' │ 37.108  │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │W
+│ 59      │ 'Cj9nBYARJPbo39qYDXDQFHHqr5JmoFmR7CtvbnfWpump' │ "c'mon, do something..."           │ '5494.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 60      │ '7bV1muHKfADDP1aaKs5kFh8KP7Vysu6Wh3jqJYj5pump' │ 'LUSSO'                            │ '6319.62 USD'  │ '🟢' │ 1.795   │ '🟢' │ 36.658  │ '🟢' │ 46.721 │ '🟢' │ 49.334 │ ''     │ ''      │W
+│ 61      │ 'H2EqnbudobPCKT2DFnBggpeDm8Yaib9bqu5ksvydpump' │ 'Rhett and Link Coin'              │ '5501.55 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 62      │ '42E1fiSTt5LeTChiwE8AWb7UGpc16bkRWGWUKkK9pump' │ 'yo'                               │ '5504.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 63      │ 'UhskZVmznSTK4HdMqsQxYttVmrg9dUVPx2GEjkZpump'  │ 'Pandude'                          │ '5869.94 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 64      │ 'FErCwLpFzaLcRwEmLGr8tY8dp9xpoWymQjG6NgWUpump' │ '2016 Official Coin'               │ '7717.83 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 65      │ 'AeWsqD5Lgsf5Kn4Ytc7qNqcwvAsopdYWoYywLc64pump' │ 'Durex contex guy '                │ '6639.95 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 66      │ 'FJEtHBkjPMdcuFfqQxBC3qBVXs9puXNxEaAXtj93pump' │ 'cult'                             │ '5578.12 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 67      │ 'Fxg5PewEfpVEgn1pS7UvRvNnTAPC2EKtcvrh1XBGWvbF' │ 'First Patent Dog Solana '         │ '5516.16 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 68      │ '72osrshNFiN2TQ6zGuitStuLgnYvgaUcFN3LQeKTpump' │ 'berd.'                            │ '5502.17 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 69      │ 'Z55HeB8DN4h7gXdDhaPW586aWgtMtFnxfuDMuCopump'  │ 'DONDA sports'                     │ '5497.38 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 70      │ 'J8dM47wnoeJ9GCKHaCm3tNwxw9iAjyCKRYXfzTD3pump' │ 'Poppy the doggo'                  │ '6372.94 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 71      │ '3xLgFNTHGzcbhkxnPvP6Acnq8hsYaDuTmY7KbdkV8L54' │ '1st Sol Foundation AI Token'      │ '20668.84 USD' │ '🟢' │ 78.414  │ '🟢' │ 128.951 │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 72      │ '7CUVPqEYdDWtAdpw2NuCqVdcUctgNP2vawWow5rdpump' │ 'Decentralized!= Disorganized'     │ '30931.96 USD' │ '🟢' │ 21.863  │ '🟢' │ 68.747  │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 73      │ 'C3Ab2EjSEfsBjt4XmxKfTHtSFCydPv95edDosF8wpump' │ 'Dog Holding A Spoon'              │ '5501.55 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 74      │ '697qkNgFMcokPFCFCTz4832B5vMdorVYve4zzAgapump' │ 'sensiai.fun'                      │ '5547.79 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 75      │ '3PYXDt2yx8AryXjozeFnSvH9h5wK9nyuofZrQK61FHFE' │ 'poly dog'                         │ '5801.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 76      │ 'GLbbaz8Yf1rJcHJWxMvUznHrCFJ8mLd4Jz8nYGsYpump' │ 'Goatse Gospels'                   │ '5501.55 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 77      │ 'BcpRg8NiNeuRkqCRBdkAouJE8gCrbA9kdrcHJrQhpump' │ 'BOOBIES'                          │ '5713.08 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ '🚨'   │ 87.98   │
+│ 78      │ '3xbEr45hk77QR6R6vvjxqxLkFH94GcdMB5hy5HDrpump' │ 'smol chicken'                     │ '10589.95 USD' │ '🟢' │ 71.477  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 79      │ 'gPVpxGqvuXTUuZrqbaa2ZP4NB2TAbcRsyukVAAwzM8b'  │ 'BREAKING'                         │ '5521.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 80      │ 'Bm17qKUZ59zRezFNTVAJx2KCwEksm4avbdCK8pPgpump' │ 'Oyabun Donald'                    │ '10558.13 USD' │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 81      │ '5FeGJDw5jagAguHQU2MgqhZ7m9enwHkGwEGhKBc6fPQL' │ 'ex trencher'                      │ '5549.61 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 82      │ 'Wy6QnpfVRgQ42Axn9YWCqVtktXPrUE4uPhcrTQGpump'  │ 'DOGEDOGE'                         │ '5564.02 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 83      │ 'GKCkWqQtKcbY2aEzWMfGNfLGPrekwJqCNfhD7wj1pump' │ 'LUSSO '                           │ '19512.13 USD' │ '🟢' │ 95.306  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 84      │ 'XWvaTLQUkd4ySFMLPZWCTkYwAjthfyqzGNVzp99pump'  │ 'Vitalik Has Resigned'             │ '8875.58 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 85      │ 'B6XSfJ7S5Rk8tzi1tkQas5QpBdG9nmsAr8EmPyLEpump' │ 'Helium'                           │ '5515.68 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 86      │ 'J8m9SDinLFaHKVnW26a92usZgvh8tR3Fmz24nMV1ecTM' │ 'media rotation'                   │ '5501.55 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 87      │ '2oD4YsJw4yboSHrpMVzswcJDU8328qRpJakXgcoqpump' │ 'pain executing play engaged '     │ '6136.26 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 88      │ 'EaCNBHQsgEFfhULBmqKHyMMWjP73wwe5DrC47Eeqpump' │ 'Let Me See Let Me See'            │ '6790.07 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 89      │ '6aiAG1QPhGFggEZESQuhwK7Bg9jiN8So9YmADYVypwg8' │ 'Democratic Alienation'            │ '5508.90 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 90      │ 'ER8Sy7vB5sb4HCzAbNg53eH3STvr8AieXiMoxcyCpump' │ 'MAKE EUROPE GREAT AGAIN'          │ '5501.55 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 91      │ '9LbT5eZSkV1omH4wcmy6sGFfcKM5qrbU9A85KYsE5pVE' │ 'Make Europe Great Again'          │ '5495.57 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 92      │ 'G5oj9bW6Mxyh2p76CexG9YNc9vcYUfQNozT6x9Mzpump' │ 'PLAYSTATION DOWN'                 │ '6322.70 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 93      │ 'GHrSqs5pukHhNXfAF4S67nGWdZdHqhoDW1n3QTeNpump' │ 'Most sophisticated liars'         │ '9051.03 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 94      │ '4HXhNhCmpomjBYcLsRa7SpcPBPDw8xwnm8mNgka3pump' │ 'Volume Solana'                    │ '5519.11 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 95      │ '89mnUeHMd7ZMeUgE4fNCGyKw4d6JEthx5JYB2JaHpump' │ 'ZEYTIN'                           │ '9650.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 96      │ 'C5tMKdLFKXot7HxEa3AmV6sxpdGHhTvFaSN9sTKMpump' │ 'A cat with a spoon'               │ '5533.60 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 97      │ '21478A6R6vxWfaMDyLm3P8WckdJxc9FYhTKo8w1mpump' │ 'Touch Real Grass'                 │ '6715.21 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+│ 98      │ 'DybA4mANMroCDppMNbkw37SZZd7dVTenNFQTbApCpump' │ 'Kurone Amatsuki'                  │ '8640.94 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''     │ ''     │ ''      │
+└─────────┴────────────────────────────────────────────────┴────────────────────────────────────┴────────────────┴──────┴─────────┴──────┴─────────┴──────┴────────┴──────┴────────┴────────┴─────────┘
+
+┌─────────┬────────────────────────────────────────────────┬───────────────────────────────────┬────────────────┬──────┬─────────┬──────┬─────────┬──────┬─────────┬──────┬─────────┬────────┬─────────┐
+│ (index) │ CA                                             │ Name                              │ Market Cap     │ 1.5x │ TT1.5x  │ 2x   │ TT2x    │ 4x   │ TT4x    │ 5x   │ TT5x    │ Rugged │ TTR     │
+├─────────┼────────────────────────────────────────────────┼───────────────────────────────────┼────────────────┼──────┼─────────┼──────┼─────────┼──────┼─────────┼──────┼─────────┼────────┼─────────┤
+│ 0       │ 'BMNxbcvUfannudxhCSkjCnDH6eAw3m1jhm2WQTWepump' │ 'Honest Anhinga'                  │ '5507.36 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 1       │ '2tywweeqLwwZS2KpWEjryShVUUgm4etUng5VRAr1pump' │ 'Cat Estate Coin'                 │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🚨'   │ 130.9   │
+│ 2       │ 'EgvjS2GtnQwNXTbeQBi59SNPNLMDKKzjk2yRttkYpump' │ 'Unicast AI'                      │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 3       │ '4pRgmFopNfb4qPz5tTTF6YsNGK9YjGdzQfbfqKjkpump' │ 'SMOG'                            │ '5847.77 USD'  │ '🟢' │ 269.711 │ '🟢' │ 503.371 │ '🔴' │ ''      │ '🔴' │ ''      │ '🚨'   │ 672.187 │
+│ 4       │ '5HtmbEry4qNGw9MM56f2df8NfMExgpscuzfSNY2mpump' │ 'Kanye With A Spoon'              │ '5627.51 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 5       │ '6QCiab1gL5jEuhESCcfSo6BqMEaQbfHLxrLhgGEopump' │ 'The Holy Sendor'                 │ '5514.51 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 6       │ '6Hr7Uom2UYMKDgmChDFd5Pm9wW8DypT9a7sLPovKpump' │ 'The Holy Sendor'                 │ '6104.72 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 7       │ '82yBQSBH92exHJm4FYq5YkSzZ8RKYiULNo2juKALpump' │ 'e/acc'                           │ '5533.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 8       │ '2XtiyJtWzPUV4AaoFNHYhjFRNjzQ55z24Q4rLbJJpump' │ 'Dignity Sin'                     │ '5512.53 USD'  │ '🟢' │ 43.154  │ '🟢' │ 96.5    │ '🟢' │ 169.857 │ '🟢' │ 206.143 │ ''     │ ''      │
+│ 9       │ 'Gnu7EF8JpwouEzZezowCeYR5LoBMmg1fiUuzCfKpump'  │ 'PEPEX'                           │ '5812.39 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 10      │ 'CVejSpC9z94G4DRo8mPXrEJ8uWxH6jAhyAvYrzjopump' │ 'Mr. Freeze'                      │ '8921.03 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 11      │ 'bwBovRTToGEbuab6o8GZmj1fekdGw7PC9UdVsQnpump'  │ 'First AI to Human Speech Gate  ' │ '5505.50 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 12      │ 'J2wp6MQTtswpSiSrJE2ZbB1yzHHNRJRmu1UVjhmm5rWj' │ 'effective altruism'              │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 13      │ 'HwHk4gTEvYc9HYhRzBRxrFxt3iL35UrVuu9v9MJmpump' │ 'American Tax Dollar '            │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 14      │ '2d2qBNC83e2fHkmD7Zkdpd25qb2xaGDEYSiDRqfjpump' │ 'smol mumu'                       │ '6393.58 USD'  │ '🟢' │ 94.929  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 15      │ 'GQWg6Brx78wQtuLHRUVhwEhKMA3g5VEjr8KiDrkApump' │ 'netron by lutzroeder'            │ '5506.86 USD'  │ '🟢' │ 115.832 │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 16      │ '4vkZyVruRAqmLX1L2kqnt7JoFGMdYWgNiPq3mv27pump' │ 'murmurprotocol'                  │ '5985.62 USD'  │ '🟢' │ 95.341  │ '🟢' │ 136.997 │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 17      │ '6TQKx4cLgPgPZDxRe6wSmbxS3LJpfycX1TDSsehypump' │ 'Maiar AI'                        │ '5529.68 USD'  │ '🟢' │ 7.371   │ '🟢' │ 20.53   │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │W
+│ 18      │ '8peFup2hUXYRJ6fKuTUEXz7ZoEiqVXjdnu76KtSaAPjq' │ 'bring back dog meta'             │ '11219.11 USD' │ '🟢' │ 675.209 │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 19      │ '6PvDiGh4U5yjQrF4iGn7KzTEgAey2uxTSNsKs1QWrFGb' │ 'cash assets tits'                │ '5573.75 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 20      │ '2QeVRSCT9ZwiR4jJtJox1GQsP8AELnFBS2WfjL1hpump' │ 'Paladin'                         │ '5507.80 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 21      │ '6n49bRvrxV1PiLdfciCkBgXYpwen6obUXuQqTWe8pump' │ '55%'                             │ '5503.74 USD'  │ '🟢' │ 23.276  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 22      │ '84TVtuTdNuTPxwcbQCLXLxbCVVtCxUFXqv2feWUopump' │ 'fukin tired'                     │ '5504.09 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 23      │ 'HKuoVBMqe5pNZircNbcDVvtSBkAT9337SKsXCpndpump' │ 'Agent NineX'                     │ '5572.46 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 24      │ '2GBLNRKbbWxz9P8HhaAdW3eE6URppkDkcN5L48jVpump' │ 'Deceive'                         │ '5503.73 USD'  │ '🟢' │ 40.692  │ '🟢' │ 59.757  │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 25      │ 'tSYtpKPU6ygySv2vNnKezgCXY3vZthtM6Km2ivspump'  │ 'fiona'                           │ '5506.84 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 26      │ '4bGWXvSkjbo7aeVQCQo3AWMhVHVos5CisTBNtLuXpump' │ 'BARRONAI'                        │ '5506.87 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 27      │ '7zCvH2qEAMc8fq1vAKhTe48sCHxAKSy7JFH1fjSjpump' │ 'Cat Estate Coin'                 │ '5504.54 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 28      │ 'B6vx82agBaB5dsK9zhMQxQptU33WY6NLiWPK18qpump'  │ 'Kanye West Eats Spaghetti'       │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 29      │ 'AYy8gugvYrB1gSLinYWLXqgJkBzceUfpz5icvQmypump' │ 'VIDA'                            │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 30      │ '7U1D2j4xqgW7SyxNrPLwAe17HctKUodLtyasPBgwpump' │ 'Satoshis Second Coin'            │ '80881.76 USD' │ '🟢' │ 5.853   │ '🟢' │ 6.499   │ '🟢' │ 30.52   │ '🟢' │ 141.477 │ ''     │ ''      │W
+│ 31      │ 'GZYNcXDmg8Mu2qvSKHrsWZohvpTDkWrS1dgYu3KabktE' │ 'DOGE Of The United States'       │ '5507.87 USD'  │ '🟢' │ 58.384  │ '🟢' │ 78.794  │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 32      │ 'FAGPTSC6BGaDr3QSso7Y33VuDJz5VhsUEN6Jh7CMpump' │ 'Jonesy'                          │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 33      │ '9hnLdcPpFJsD46wpRMNimf9PBufks7Jcq7pqjzbepump' │ 'Evolution AI Agent'              │ '5504.65 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 34      │ '7SzoDjbFExP5Ag2mco3kq4fGokMQ3wgHDumBPbPTpump' │ 'First stick to 100m'             │ '5509.91 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 35      │ 'CUvszay6Fj2yKQVAyfADcEHmUaFepTvFZXeutTGxpump' │ 'Trump in a Dress'                │ '5955.89 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 36      │ '3QRPsrTuUpDpv2DTnpkTGKPWnEnQXDUxMm7NwktGkHpR' │ 'Tried Going Outside'             │ '5505.05 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 37      │ 'DU7ZNMjMqMLT2Hn67fdLHpPDJzTKN6e5dGKbtekkJR4M' │ 'outside'                         │ '6434.52 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 38      │ 'Cb8rpbUZQyMLdeacVKSfrbPVgrvmBDyMZaoUBtaVpump' │ 'Satoshis Second Coin'            │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 39      │ 'VvMMkPyYja5jgXk7DaSSHTJNai9U9ZjFJMyntx6eKDq'  │ 'solana windows'                  │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 40      │ '5EGe2bSjUT2XZeBt5KhoZXBYaySHapauBwGwdStPpCF8' │ 'MEWRS'                           │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 41      │ '37EbdYr14RjcjH2VyrWzrkCuVkFmD8KHjkfXovqCrhPt' │ 'touch sol grass'                 │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 42      │ 'EfKHAYpuVbsZdYuXgmKN4K8QYE5wy587WSmuZci5pump' │ 'TIMI AI'                         │ '5515.24 USD'  │ '🟢' │ 3.155   │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │L
+│ 43      │ 'FvLqL4N9vQusA1saZKCwrYDkFvmpTCLf3xZEvV8jWqz8' │ 'Real Grass'                      │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 44      │ 'DaXSS72Zh5JRYedEZzppbx9L7iMmhDdaTuKumWbupump' │ 'Outside'                         │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 45      │ 'EesxvYMnT321Gpq5pfppvxUf6bmUiPqYASDgEkL1pump' │ 'Satoshis Second Coin'            │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 46      │ 'FwQwWQgBjGashmpxPHQ7rayqkE328fsgZHgt2ZYUHGrU' │ 'Kanye is a Gay Fish'             │ '5504.80 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 47      │ '4LDrbw5tAGJCmn4cm2dcf6LQzkcC453BuTu3c9ZYpump' │ 'Wanted (1$)'                     │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 48      │ 'GvHA3pKA73ixTXPACUB4cCaNKTZTzoNL2kk6FAF9pump' │ 'Schizophrenic Black Racist  '    │ '7176.95 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 49      │ 'Zkp1yTwR2d4sYzPcrLTFVR456HTsXBoGRknCVYBpump'  │ 'Smol Tisim'                      │ '5515.83 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 50      │ '2TkoT2zLAYtiT7f9VsQGCY9uJD57hpBr6avyBiTWpump' │ 'Solana'                          │ '5528.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 51      │ 'Eocfjz2PCD74sjNithpYWyyn9uxuX6h21UBrc9NZpump' │ 'MAGGIECOIN'                      │ '5506.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 52      │ 'GVozbUnWG9w1X7NBvuKBpRyVwkmjCavADrT2yjrppump' │ 'SOL WIN7'                        │ '5505.07 USD'  │ '🟢' │ 11.784  │ '🟢' │ 28.541  │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 53      │ '5Wbs7MiE8SD3WKNsHxwvjFywTBKMPBpUhbjXDjL6pump' │ 'smolpox'                         │ '5506.87 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 54      │ '9Fri9HbfxAefpwcNSTJTdwurpQi7LS664j2oLoGypump' │ 'Dog with wooden spoon'           │ '6259.91 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 55      │ '4edJJaB8QKXbsci5yFm2n31PWZchqXftnz3cYhfnpump' │ 'Satoshis First Cult'             │ '5518.59 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 56      │ 'DtiNRRmAW3U7F7B8R1LtQKPPLDwK7iY75w3VJorvs4QX' │ 'The Holy Cook'                   │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 57      │ '5fDJ3HkuPrZE7PRQLVbnqp27BedxM37y66sywUh7soc9' │ 'Satoshis Second Coin'            │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🚨'   │ 450.959 │
+│ 58      │ 'A9kf3NvoN7T8GtfyxvENbfkHNqp8srRYe1ahzxkXjYLV' │ 'Satoshis Second Coin'            │ '5505.88 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 59      │ 'D9TG5JYLzzgaDPbjcbiuYAYu7CYkUDPDzLcfjF5Tpump' │ 'mtndao'                          │ '5515.10 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 60      │ 'Dhz5Q9F8ChQRv53ZKKjmCfaXkRUPT262WUj9YHrPjNsk' │ 'satoshis second coin'            │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 61      │ 'G9vph6PvefUcVefPLcZCRnkLFhhpKW51v1xZhvNT5RSx' │ 'Satoshis Second Coin'            │ '13040.23 USD' │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 62      │ 'FbM8oEmMq9TpYuELX5ih6GuLDZ8Eh5xScczTLWJmVJ3'  │ 'POV: You are crumbs'             │ '5611.75 USD'  │ '🟢' │ 118.606 │ '🟢' │ 178.674 │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 63      │ 'FJsoHAxsQjkMQgBsQ3LkSN8tC2njXrtSyCxXKoYDq7T7' │ 'special government employee'     │ '5504.82 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 64      │ '2av6crpJitLpZkkhxUYarQ97woQMXjp6GU7yLjyxnZtf' │ 'Justice For Emmarae'             │ '5505.08 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 65      │ '2Ng1tU2WPN6E6vjnqWP5DyCTPDEs7iZ1qR2jSBEcpump' │ 'eddie sang'                      │ '5523.90 USD'  │ '🟢' │ 100.712 │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 66      │ '275LfQ8wk2NMdYBHTZ1GSqM8oWwVQJUEgMYQphT9pump' │ 'Cat Theft Auto'                  │ '5505.35 USD'  │ '🟢' │ 6.048   │ '🟢' │ 38.019  │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │W
+│ 67      │ 'vd2UXq6L7nBzQDK5S5ZA5J7gfb3jGbXyJYupeZQpump'  │ 'Superbasedd'                     │ '5515.34 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 68      │ 'DHhkFSd1LmJBf5guuquBzMoZHwcqQkYBkgRYe9bipump' │ 'Elon OF'                         │ '5509.20 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 69      │ 'BDbTA82azfdcxRk9CRnVYFThLQHCUWdUGczC9A7opump' │ 'Hetrosexual majestic rave coin ' │ '5584.43 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 70      │ '2Qqx1AqfhXaJRMqGmR6E72VtjbPMjUExuZDZADSfr48u' │ "ye's new opp"                    │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 71      │ 'EeqV69KwG21y3BuS9evAFFHTunY74JzrkWPbi1S2XFpG' │ 'voice Jewish agendas'            │ '5503.73 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 72      │ '2pUCvgbhpyDqQp1MG3Hc8ft9DkXeLUdhiUysKRB1asUa' │ 'Justice For Dave Chapelle'       │ '5511.07 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 73      │ 'CBhg6jwMwQe4hXKpD3TwZaabGr5E6VGYMkkGPtiWWRMh' │ 'justice for ohio girl'           │ '5512.35 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 74      │ 'EKE2TvHPTkL6JTK4FiEhk7xavq3jnkk2cDoDqjj3xq1H' │ "send this if you're racist"      │ '5503.73 USD'  │ '🟢' │ 44.406  │ '🟢' │ 95.173  │ '🔴' │ ''      │ '🔴' │ ''      │ '🚨'   │ 142.792 │
+│ 75      │ 'DvVRLcJ2somx34wMZdsVfVkFY1Ao6ymAgcthyz4hpump' │ 'Cooking Wif Shiba'               │ '5520.24 USD'  │ '🟢' │ 9.226   │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🚨'   │ 29.357  │
+└─────────┴────────────────────────────────────────────────┴───────────────────────────────────┴────────────────┴──────┴─────────┴──────┴─────────┴──────┴─────────┴──────┴─────────┴────────┴─────────┘
+
+┌─────────┬────────────────────────────────────────────────┬──────────────────────────────────┬────────────────┬──────┬─────────┬──────┬─────────┬──────┬────────┬──────┬─────────┬────────┬─────────┐
+│ (index) │ CA                                             │ Name                             │ Market Cap     │ 1.5x │ TT1.5x  │ 2x   │ TT2x    │ 4x   │ TT4x   │ 5x   │ TT5x    │ Rugged │ TTR     │
+├─────────┼────────────────────────────────────────────────┼──────────────────────────────────┼────────────────┼──────┼─────────┼──────┼─────────┼──────┼────────┼──────┼─────────┼────────┼─────────┤
+│ 0       │ '6pAydqccPZCcmmP4h2bhyVSnTEMQ7JTedZqCcj2opump' │ 'God'                            │ '6977.39 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 1       │ '3vqFoV5froZyGBwHNo4MxFbYTjeFDg8BRVSosiT1pump' │ 'Anti Jeet Technology '          │ '5503.13 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 2       │ '7hS2gfwJA3cFijJKQ6icnronpLWAHrdF2ZHXZqS3pump' │ 'Jeselnik     '                  │ '5528.04 USD'  │ '🟢' │ 9.571   │ '🟢' │ 16.949  │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 3       │ 'HQbzP7MxQQaRYmhoxPEJkFrQXqbJSKoGNzCNtS41rcuU' │ 'Top Greatest All Time'          │ '5572.79 USD'  │ '🟢' │ 17.172  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 4       │ '78LRDJxpvuiDfgGPK3YZZ9jwWndoiQsFux6SGKMEpump' │ 'THE TOP GOAT'                   │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 5       │ 'DfardJkJASQXRzKaG4jjpUNsY8g2Do14gg8fjkYhc91F' │ 'JONAH HILL'                     │ '5509.91 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 6       │ '4PSfjSZWH6ktRYmw9XCwbrqBsiGvnqUYtq3pdQiafQ9o' │ 'TOP GOAT\n'                     │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 7       │ '7pxjyEPAw8V6BNNU5Ejh8KGERMJT8w2FXnR719P4pXh3' │ 'jonah hill'                     │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 8       │ 'Hi5j9mZf3ijHjFyswh9P1eC5Fq2XyrCZfSsooqyCpump' │ 'Anthony Jeselnik'               │ '5508.44 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 9       │ 'DLTy21oz5v9M82c5wiczZjBcGuHSAo5GU23teMkv8sN3' │ 'The Ultimate Currency'          │ '5505.14 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 10      │ 'EL1zLqwRn9LsMejCaXfsxzN7Ka2geM4g59hKbE9Mpump' │ 'hyperliquid'                    │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 11      │ '9eJ2QW6BLuagJAuu2jYW7vGVVs5TaMteri2Mdqud2CcQ' │ 'top goat'                       │ '5536.67 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 12      │ '7ZV1bfJmbMTxtS4BAEc3VfTPpimQdmrH6PemGBuHCLVb' │ 'GOAT'                           │ '5500.64 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 13      │ 'Hsf1d5R19aX4TZ3bEjVRLSPaoDsLX4km3AYaryekpump' │ 'High School Furry'              │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 14      │ 'FGoh8NrZyhiLd6JFYrRQqXoSKqUamcoGuNTzk83XdRBx' │ 'Cooking Wif Shiba'              │ '5500.64 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🚨'   │ 760.634 │
+│ 15      │ '5VaxNcQfVN9BPcStJRNJZdrjtsCEc3nhTfJ4SRtGpump' │ 'Smol XRP ARMY'                  │ '5607.52 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 16      │ '8KU46H5MedctgZfGPJhnpcCCtZJ6tmqGWv4C4Y5Upump' │ '99.87% Accurate Coin'           │ '5508.44 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 17      │ '8mrCbnwNJHhCR1yTz2jMdPVZsstQYYHHNcJvvk5ipump' │ 'Cat'                            │ '5546.00 USD'  │ '🟢' │ 7.948   │ '🟢' │ 54.899  │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │W
+│ 18      │ '6Zym46PBL7NfT3oarwPbVNQnRmdbmbhYwVBAD1LApump' │ 'cat cover'                      │ '5513.25 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 19      │ 'An1gSFBa7CPqiyWHY7Pc6RTfy7aWMjaGhFgcApcWpump' │ 'DR RAMANI'                      │ '5500.56 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 20      │ 'FyxRHF6fSYefqyXvMjmjAoqSdp7NVW4sqhNtWqX7pump' │ 'Moon Lambo'                     │ '5505.30 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 21      │ '6vnK3JL1uLJhXUXUYbUKYJiwtRFBc27Vwpa2nwiApump' │ 'My Idea Totally Collapsed Hard' │ '6151.49 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 22      │ '5e5ZVR9tcHpxNsnxGhzcYKp5SytbnWWTCpo7AF8Spump' │ 'Grand Theft Canine'             │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🚨'   │ 120.612 │
+│ 23      │ '3kzyGDAKU1deVNtj1NsKLmdHuQtBPN8wY7uDVBMwpump' │ 'Anthony Jeselnik'               │ '5501.30 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 24      │ '9sy2xxDGNSNaKF2sd9U6abtTHiqfmVWV9ZeAL2wnS6Ei' │ 'toothless'                      │ '5506.33 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 25      │ 'B22UyuG1K4xnLXg313gk435Qcr6UytABYiUYHmStCzbc' │ 'dada'                           │ '5550.87 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 26      │ '5BjMr3LSbQFMJj2DxF9WTnGk9rv1b9fRsgastrUPpump' │ 'Nigga '                         │ '5515.42 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 27      │ '14rMJtbbST3NCG8QquybbndYfsRY65kpXvPhvELxpump' │ 'Xbox Cat'                       │ '5506.08 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 28      │ 'BHvvfJxBKWAJkwRvs1pfBKoDazy3C1j6sfxQ72qrQL8E' │ 'rug or runner'                  │ '5647.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 29      │ 'Cr3L1Mj4LXxQMmguinFg6xwPU5HhKuXPUWGcQXzgpump' │ 'Kanzi '                         │ '5500.37 USD'  │ '🟢' │ 7.4     │ '🟢' │ 11.974  │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │W
+│ 30      │ 'VXSbpndw1m8MAN8nq5wgFoFmGwNMaWXHNjb9qgCpump'  │ 'THE ORIGIN OF BITCOIN IDEA'     │ '5627.59 USD'  │ '🟢' │ 33.252  │ '🟢' │ 53.505  │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 31      │ 'DNCmFX13mpgFHU9F81b1RfLj712V2sro37MemBrHpump' │ 'Trump News Community'           │ '5764.52 USD'  │ '🟢' │ 17.679  │ '🟢' │ 17.91   │ '🟢' │ 87.165 │ '🟢' │ 119.477 │ ''     │ ''      │
+│ 32      │ '8RAWpqiQXnK5hZ3iG3wU6FFuTD5R4JLHbZTPZDMiXa1W' │ 'Solova Ai'                      │ '5511.23 USD'  │ '🟢' │ 75.022  │ '🟢' │ 118.223 │ '🔴' │ ''     │ '🔴' │ ''      │ '🚨'   │ 199.975 │
+│ 33      │ 'dnNqtGDc4vUdzNHhHYDRDEep2UgFDGw4c2aqtr8pump'  │ 'neuro science'                  │ '6209.51 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 34      │ '9KhDT3HcBko4QZS11pev6Vjqcsmr6c5VHr9fBsEcpump' │ 'Corey'                          │ '5532.49 USD'  │ '🟢' │ 36.763  │ '🟢' │ 88.41   │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 35      │ '4jDPUsUbvRx6bFutWhp6zSu4SJT5GpedmAcAgskQpump' │ 'AIR DAVE'                       │ '5511.88 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 36      │ '85SbB44iTG8FCUGhYykkd2eZtn5T6jZRM1aSrFjKpump' │ 'Ass'                            │ '5508.44 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 37      │ '9J1YDRiEY4XkGv8grSkkdKAAEFKHMdCWZNXb6QXwpump' │ 'you get No Bitches'             │ '5511.27 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 38      │ '77bH4L9WayyRv5CFaTZsEudZ9vcAdukf3F2vbfE1pump' │ '$MONEY'                         │ '5622.05 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 39      │ 'J3w8M3PY1gzMHyicaXn5ynJCM7XWo2W6cBEFKVBPpump' │ 'JUCHE'                          │ '5896.89 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 40      │ 'BTKmrkdU6VQB1D3qNE64x1JpPZyUWCns4xmrXSfVpump' │ 'smol hatsune miku'              │ '15225.52 USD' │ '🟢' │ 1.932   │ '🟢' │ 68.016  │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 41      │ '4dcwVXAiwXftc1xx17BUB7s4d2bhBBPSgMQb2ysSpump' │ 'AIQ'                            │ '5626.93 USD'  │ '🟢' │ 10.241  │ '🟢' │ 108.207 │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 42      │ 'DiL9sbCeFhme4kUScrFG89miR69Kg25eM9bdEhwJpump' │ '@Lord Of The Legal Rings'       │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 43      │ 'AV2J5Pusnc3JVgYQba46wq4Dy7SeR7KaLbXk3qnW6wgQ' │ 'bloodriver'                     │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 44      │ 'H7SAzc97sEGUmcBdwPTX8wvWzzqCnmzYDasNNaTpyibL' │ 'Kanzi '                         │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 45      │ 'BrXSvDcXnEuHgp1fdkKohzG58D4Vy91xiNktkyMppump' │ 'Trump News Community'           │ '5595.71 USD'  │ '🟢' │ 64.216  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 46      │ 'B2WQmyUzL3u5xio4dcoSBF36Cn9ZK1iWeVhdEaqxpump' │ 'AiBox'                          │ '5503.63 USD'  │ '🟢' │ 280.999 │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🚨'   │ 437.765 │
+│ 47      │ 'EvCtCP1RiT7w7ZqWf7yGZiDRt8HHhWw8ZdGFHJENNVJx' │ '高次のファHigher Order AI '     │ '5507.31 USD'  │ '🟢' │ 23.574  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 48      │ '2UNrESEzDM3f6E1e6djw9QuqCZs4RXddeQgigLuCpump' │ 'My new Pepe tattoo'             │ '5503.54 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 49      │ '3B7rQHyQDBjdj3XbxvHNipWkyU6hgh3S4ZYGpASZmMC1' │ 'First Element to Raydium'       │ '5505.36 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 50      │ '7i1swL1wyw5cSuZDWkVuy4p5SYfAe27aCDuc3fMRpump' │ 'Rita AI | AI Trader'            │ '5741.27 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 51      │ '2EAerkeUqvcwxWrwJy8RhkdrkU2PQoy36VmTvZqepump' │ 'First BTC Transaction'          │ '5530.09 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 52      │ 'CVeAg153SnsEwkSm8tYyQcHUs6zHFEMsZNLossFypump' │ 'HILL'                           │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 53      │ 'Chmk147D2HvWZ3DmkDrjy1tgE3HSxwsh6FbR6F7Hpump' │ 'dream world'                    │ '5503.85 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 54      │ '391n2DGRnfsiAi8haakiDQTkajmZukpzDuZeC2Fypump' │ 'CABAL Of The US'                │ '5521.41 USD'  │ '🟢' │ 116.625 │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🚨'   │ 544.685 │
+│ 55      │ 'B2nfYkTtTjsgwQLWdL2MDPDpKRJSstPpnN1VFztppump' │ 'Trump News Community'           │ '5500.41 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 56      │ 'E5wiYb6LpS3KQ7sE7PjidaSwjmg6zSwViFTWiqMLpump' │ 'GOAT'                           │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 57      │ 'DfEtSrsS82kU7RmDKToEGcFrqfrhzNWcxHfiWiBApump' │ 'First BTC Transaction'          │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 58      │ 'eRK1JXLqiSvUfCJsjYFNYyX1pQiLkyPuHi4NaAQpump'  │ 'First Bitcoin Coin'             │ '5503.59 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 59      │ '7QPrrTfZCRAso2WKtgSPu5YPgwq63ozH32WczUVHpump' │ 'THE FIRST BITCOIN LIBRARY'      │ '5501.29 USD'  │ '🟢' │ 7.37    │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │L
+│ 60      │ '8uyS1NqTbtoxYW5eGLxpHBh8h25otDjV9ZdEXPK4pump' │ '401K'                           │ '7630.85 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 61      │ '9GWnnf3jKLCzQ9b7Pdi6LxFQerHpEe1ZSdSVgW9Fpump' │ 'twiter'                         │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 62      │ '2HqTZfLsRsxQX2ifeSngUfcXJEThm2UehhuJ2Pn2pump' │ 'smol pussy'                     │ '5845.44 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 63      │ '8XRmfU5W65X4qj7e28QmbZayReqGFMoWNjUHbubzpump' │ 'goat wef tism'                  │ '6425.76 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 64      │ '2S6iPmdYD1XtMrfv2MEK62dbsQQCe7FYDHFs6SrQpump' │ 'SmolTrump'                      │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 65      │ 'J9f3xDHxCpfd1JFJBMWDnz2KRTQ474UXCeEoTHvepump' │ 'HILL'                           │ '5539.27 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🚨'   │ 74.166  │
+│ 66      │ '9cAVHWq2nCayLaDDscgNHap9er3oEc1qHYMXGNTAeWEz' │ 'THE FIRST BITCOIN LIBRARY'      │ '5519.38 USD'  │ '🟢' │ 201.423 │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 67      │ '8nbMWcx45hgNM8YYSjCew4QMz9XqQN2YvtwRDbAmH1Kf' │ 'huba'                           │ '5731.58 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 68      │ '7fVM8Sp1CArocHpt6W2yn2yddsJy5ggxpoKNozeXDzd2' │ 'First World‘s Scammed Dog'      │ '5524.78 USD'  │ '🟢' │ 27.584  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 69      │ '4fAESXCybXbd8cKwS15mvrY9uZ1qCgcYRhVr5XYLpump' │ 'MOOB'                           │ '19963.47 USD' │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 70      │ '2fMzuRjdxwRsm23kvRXNaL2FjeXEK6Htc5tp35qhpump' │ 'UNBAN CRYPTO'                   │ '5503.48 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 71      │ '6wRi4fzwZoGRYkCKUhNnQ9uGEzLptQMyq7ttR51Xpump' │ 'THE FIRST BITCOIN LIBRARY'      │ '5721.82 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 72      │ 'BYEJ424W3Z1UsoQz2oAqnPTrk1CW9JWwqfLGepLWpump' │ 'kermit pepe'                    │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 73      │ '9eGzzp6oq5AjyyppufbrD9SL5KNRJFw1WibU8ESFpump' │ 'First Bitcoin Ever'             │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 74      │ '7FVWLAUN5L8pArdQL5Eh91ztTUJ9TuFt9tVpp6espump' │ 'Canary AI'                      │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 75      │ 'GNDsM2SJLo7FwCNimqDaHYwiqZC9LfxmB6VuoEPGpump' │ 'smol ant'                       │ '5582.57 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 76      │ 'BGeNtXKWyRSANKb4hGNMkJZaPEBr9tPvP26NRvHupump' │ 'Trump News Community'           │ '5503.53 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 77      │ 'JDT6JM9KsjJB5ngLhBQZ9tYKeZQnLEp5x9P9iq28pump' │ 'The Mob AI'                     │ '5513.10 USD'  │ '🟢' │ 29.476  │ '🟢' │ 33.047  │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 78      │ 'Ah4u1U5wA4dviJjupbBUCnVgTMGzYWTdVSuoWQiRpump' │ 'Kent'                           │ '5512.59 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🚨'   │ 165.877 │
+│ 79      │ '3chraLheL9QgsYPDE5anLzx85vra5a4iK8RSdpEPufDf' │ '🐕+💵 '                         │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 80      │ 'AMvSuYmoGexBcV4478t9FegYjrkrWyEqHp7611KSNsvq' │ 'fob'                            │ '5649.42 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 81      │ '2bcmXyaCTZdXbUohi1sSa7prDTRvetZ8Vw2FdJdFpump' │ 'First Coin made from Space'     │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 82      │ '6mzkzwBLnDc4KTQ45GsGvQ6Ycv4gsZRHUdBAY32y1Yz'  │ 'Justice For Dave'               │ '5502.20 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 83      │ 'HhGwjNn38WNH9Fx49MDdUfnWZTGX59KNsRjwJ4AiFi52' │ '●_●'                            │ '5512.01 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+│ 84      │ 'kLT2VYzUXUEWPvcAUngEhtFkon9QfwGdprU7qkvpump'  │ 'Trump Cabal'                    │ '5500.37 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ ''     │ ''      │
+└─────────┴────────────────────────────────────────────────┴──────────────────────────────────┴────────────────┴──────┴─────────┴──────┴─────────┴──────┴────────┴──────┴─────────┴────────┴─────────┘
+
+┌─────────┬────────────────────────────────────────────────┬────────────────────────────────────┬────────────────┬──────┬─────────┬──────┬────────┬──────┬─────────┬──────┬─────────┬────────┬─────┐
+│ (index) │ CA                                             │ Name                               │ Market Cap     │ 1.5x │ TT1.5x  │ 2x   │ TT2x   │ 4x   │ TT4x    │ 5x   │ TT5x    │ Rugged │ TTR │
+├─────────┼────────────────────────────────────────────────┼────────────────────────────────────┼────────────────┼──────┼─────────┼──────┼────────┼──────┼─────────┼──────┼─────────┼────────┼─────┤
+│ 0       │ 'DoLB5vdCJERJnBd3Vt7a3rZvyuaTK1VhqNk6kJrqpump' │ 'Justice for Bird'                 │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 1       │ 'n6t1zb5aDheLkx77qW2TEvZa6CYErwUbz3UHxGTpump'  │ 'dog'                              │ '7707.72 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 2       │ 'HiB8bdhUc5KH6oH1bNmgKJ9zsuQWdGB2cNGJHuzEiuEc' │ 'up side down'                     │ '5498.72 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 3       │ '9N1gr9eD9B72swn65Xi7axb6o3moSLyH2kiBkGTTpump' │ 'MrBeast gold swarm coin'          │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 4       │ 'DgxMUEKiHitTUYX5zJQeuLEG75DC9WkQscHMtX5xoQJT' │ 'Justice For Queens Birds'         │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 5       │ 'CkaBH18n2fmfS8JCZ26mWJzgd9kyyNMvJjbYrrU4pump' │ 'LAST DRAGON '                     │ '5871.36 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 6       │ '9RqfRUqvuSPQpqG7yfVvQtzKxXMoBTK9cMC5RgKMpump' │ 'Ω'                                │ '5498.36 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 7       │ 'CSvNgSMrkP4SWRpthtQ3zb8Z9mwDR8EtQeijvvumpump' │ 'Predo PNG'                        │ '5498.28 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 8       │ 'HCp1b82hQcM3UDG9Urn33ZHe3C2q8y8PKivLCMxxpump' │ 'OperandAI'                        │ '7484.44 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 9       │ 'CX9vtraDPJsvLRVym5ZfaARCH86r4Ab8nJfu1GnVpump' │ 'YE MONKEY'                        │ '5495.06 USD'  │ '🟢' │ 17.237  │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 10      │ '7zBsjHPeAwgAbQhi4qjo2DSXeyx3LP6djXfwycrGpump' │ 'Vlad Litvinov'                    │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 11      │ '8N4hz5DjgumAVqNPH58wMMPskwHZQSE9ct2TV3jvrBUo' │ 'snob'                             │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 12      │ '575WXdFgdD47ov6v4VCUfM6pAqrbjDBjnYjjSYUspump' │ 'why is market like this :('       │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 13      │ 'GWbgYwJCXfHSU79eEKWgHrovUvDaL6NzPc8BKHzBpump' │ 'Shira'                            │ '5501.52 USD'  │ '🟢' │ 17.225  │ '🟢' │ 18.693 │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 14      │ '8ycRRjZuQWbTULGjGRLJuiS5eRLptBWUDXRJc3NVpump' │ 'Tec Coin'                         │ '5600.07 USD'  │ '🟢' │ 1.44    │ '🟢' │ 2.08   │ '🟢' │ 282.221 │ '🔴' │ ''      │ ''     │ ''  │W
+│ 15      │ 'BAwZBhgwb5uzGXkNg3tkJrC7bQV7aTCe3sUMSmGUE1mN' │ 'SECURING OUR HOMELAND'            │ '5498.21 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 16      │ 'DvgBTz1j3Vdr2DqwKEHbfho1rFX4CCrg8CfEo56vLAKC' │ '@rapidresponse47 Tweeted: Securi' │ '5498.64 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 17      │ '6ozwpBxomf3fZxV8qpwQsYQ3x6od47VQGJKmi88tpump' │ 'ADOLF KANEY'                      │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 18      │ 'Ad8MqWaoSDk2nMDFpCuyd6FboYViVr1TQnMa3TvSXqHC' │ 'HEROES'                           │ '6183.08 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 19      │ 'bRrP6abQjSJCAzsKiT31trHc1avf1RTZUHBjjKirmD8'  │ 'HEROES'                           │ '5531.61 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 20      │ 'AtqTazYjJoqpMa8uhkJnLqTwGzWL65rPgDu9zEyspump' │ '3-12'                             │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 21      │ '592dzkJvVsXGn4M8Nt8wVi7qdxZa2Ntpn5cs789Vpump' │ 'smol problem'                     │ '5649.63 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 22      │ 'HwtnV3ixcCSowQhw9TY9aLzCv4LgH3THVusdxwG8QFQH' │ 'Lyn and Caroline'                 │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 23      │ '13bq5HZVBWjRBDNM9cGBB6aBLixWTjpawfgiaF4cpump' │ 'Ross Family'                      │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 24      │ 'F1NCQRQfCFJJdZBsn5F7A66XP61bdU9UV1hJTgC71wwX' │ 'ROSS'                             │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 25      │ '2jF8vKU6sHTdyD9mqGPbkrvd1SRDpGhCokGyVr4NopY4' │ 'Caroline'                         │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 26      │ '6ht984dY5KYUdNzsFozfJc47mjUCWTsed9RuaNXSpump' │ 'dog'                              │ '6049.25 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 27      │ 'DkCqqVfYnQ3C4UyQCsSyBvnsqcEy4uJHHibNkwnuoM6K' │ 'Lyn'                              │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 28      │ 'CUoRNNpjERsedTvqzHQ7mgbrtYSL8SKo22iHnbWztvw2' │ 'Lyn And Caroline'                 │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 29      │ '7SLikxYYfvKy3JMeKhBxvyotctpWLRFWFiHnSij3pump' │ 'First XCoin (2010)'               │ '5496.91 USD'  │ '🟢' │ 12.037  │ '🟢' │ 15.341 │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 30      │ 'C4KasGVWTt4LTuGTmtVNCVyc4SeYzkjeWgGe1swPpump' │ 'ORIGINAL YE MASCOT'               │ '5498.72 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 31      │ '4ukJPDd6CFGQETkezHPxRBGENe21jzi8pKz6MTjdpump' │ 'First Kanye Token (2014)'         │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 32      │ 'D6rr7tdQuyERCvsXSs1ZXBKJ4Y3ThZsEMafkvG4opump' │ 'GTA6 NEW STOCK EXCHANGE'          │ '5497.74 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 33      │ 'BmP1yTnBYaY8RcgxMUH9fUEN7GWaz8BvuiMuC4g2Hv9z' │ 'tom the human jellyfish'          │ '11202.37 USD' │ '🟢' │ 16.366  │ '🟢' │ 71.124 │ '🟢' │ 176.139 │ '🟢' │ 214.838 │ ''     │ ''  │
+│ 34      │ '7sVAuAVBst5MABBhAbQ7NNabQ4V1GnudCqWX1XAwpump' │ 'smol minion'                      │ '11716.98 USD' │ '🟢' │ 189.67  │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 35      │ 'CGYPKpLQsrr4nb6u6SeDvkeah5HcBgtQjTB8gp2Cpump' │ 'OINK COIN'                        │ '5844.85 USD'  │ '🟢' │ 7.037   │ '🟢' │ 11.414 │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │W
+│ 36      │ '6Z3NVkBEyv1vniB2FEZZhoKLMZhCRum3zopsW4o6pump' │ 'little waif'                      │ '5503.64 USD'  │ '🟢' │ 18.841  │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 37      │ 'HE9uYCwg7vciFHbZbuVRifydkGPzywn9Kopw699uNLD1' │ 'SuperBowlLIX'                     │ '5531.72 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 38      │ '4J25QZRfkCmsrRWAgjRNy2vVZa2FhFvudLg9HLoDpump' │ 'Kanye NEW Tshirt'                 │ '5499.89 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 39      │ '6gPYtPVGQT3xfBa6jLabLkh5cYHB3cxwPySP9jiR3G5A' │ 'WHITE NIGGAS'                     │ '5495.22 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 40      │ '4UrzCGkNCRDwLYq7mgst5C6KVW8ayTPho4kVhH8Upump' │ 'Downloadable Content '            │ '5495.32 USD'  │ '🟢' │ 165.515 │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 41      │ '62W8mHRAtGipbJiKCWenFafupLYPi9bUaW23dKN4pump' │ 'temmie'                           │ '5870.94 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 42      │ 'J35YUd5WrPuusLwG5QZ7jKkjSMK4BP6w55MgMr8upump' │ 'yep coin'                         │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 43      │ '2CFvVQCAjAAQhXp46723aTAK3Gi7jDxHCKDyxSSoqrKQ' │ 'Justice for Orange County Land'   │ '5500.71 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 44      │ 'A8GcU24WEKUjH6ctvs2x6vacWqMs3Rnrd84aMKjqpump' │ 'lyhervdwplonhrvgtbnodnalwotbshfj' │ '5540.18 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 45      │ 'toTmXHjzv6VYrmeektyDj4n68cAwN9PkAMDrPJ3zHyP'  │ 'bo'                               │ '5506.46 USD'  │ '🟢' │ 188.379 │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 46      │ 'FNLzQqrxdD2HVQjrxui9agVFp15cQVKoWGGBrdDmpump' │ 'RIP Playstation Network'          │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 47      │ 'EkBucA871HxrtNn5nVf33CTXbz6EVsMGFyiUFfQCpump' │ 'First XCoin (2010)'               │ '5505.35 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 48      │ 'HArtrnB1WrLesJKchu9865o8MLNG9rxTsp8P21vJD8pZ' │ 'Smol Hop'                         │ '5683.91 USD'  │ '🟢' │ 11.548  │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 49      │ 'GS8LRFgDCiJXLu6kPFmPxEkT4VeZ2cbw5BwbCQaVpump' │ 'COPE'                             │ '6336.91 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 50      │ 'G6No422exG6eK8ye54QoGWqBdUwQ9rRVoxEgSreZpump' │ 'Vanda INK'                        │ '5495.06 USD'  │ '🟢' │ 59.579  │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 51      │ 'DQyLSffgPTcb1nvL3mEWAD6n441oFRNJaz8pP1RBuQn'  │ 'Cat Looking In The corner'        │ '5885.33 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 52      │ '7NspG57GaFHvraDJVSTHbUWTGWUsJScR2Qny5MLopump' │ 'Trench Cat'                       │ '5866.19 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 53      │ 'DBqXTdoJwkosaaCYn9QbtRRcPsK8oUf8rkjfaa5Lpump' │ 'PEE MPEE'                         │ '5502.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 54      │ '9QuB2kpoFPx2gaXhJfEBm6FvNFbJ6s582EZcqFNSRMRY' │ 'JAWED DESPISE'                    │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 55      │ '8sXhLzwh3ApkZxbNsxFeb3GkNpHQe37ttfpkpwMQpump' │ 'The Last Dragon'                  │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 56      │ 'J8EHysWZYAkBZjKW9M3iuGXvVVoueHkRkunJds6fvVVW' │ 'Dan Patrick'                      │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 57      │ '7NcHFerJnFNkNSKVWS28khgQKA9tV46kgyHauGiw7pAZ' │ 'Allan Coin'                       │ '6238.64 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 58      │ 'iFafPhEfSzzeuBZ7FRJuixfgNhqdg4po7PvxKLdpump'  │ 'First Satoshi Coin'               │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 59      │ 'DH3JLtvsFTXoM415VEx1jDmLe5kscdZx5eHHCRwcpump' │ 'first bitcoin buyer'              │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 60      │ 'AjEdMnEjk9AUYyKjGyoTAitHDCZVDPnYmgqay3xiW9M4' │ '#1 TikTok replying hamster'       │ '5518.34 USD'  │ '🟢' │ 134.342 │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 61      │ 'EdhTFkAozBzrZQX291iAtsnD4ynCXr2E4UVgcqVzu8kW' │ 'RuneX'                            │ '5565.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 62      │ '36WiEPput3Q51362EqYXhPKrjCToLn3SXQhbNwRJpump' │ 'First Satoshi Coin'               │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 63      │ 'D8SA5JPGmeEgmMZPnpddv9dLnKzWGYFZTuxhqaPypump' │ 'this is orange county'            │ '5498.69 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 64      │ '2uy2n9ovPZVBWwf5m8mA1Yp1Qox6edGVEQU4iKYMHqHV' │ 'Larry'                            │ '5737.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 65      │ 'AuwyeKzf6G9wchnsxmgVFQJ1Usc4QUisKTvPtKd3pump' │ 'Now I Gotta Giga Ape'             │ '5561.60 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 66      │ '8ha8NrTgo7U9CFh2DWHzr9z9B84mAJzaUFr7VPphpump' │ 'PS DOWN'                          │ '5512.85 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+│ 67      │ 'wTFespXq7yYGZ1v8Se8zxEst1HPPjCZRGiAvDkspump'  │ 'Smol Don'                         │ '5495.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''     │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''  │
+└─────────┴────────────────────────────────────────────────┴────────────────────────────────────┴────────────────┴──────┴─────────┴──────┴────────┴──────┴─────────┴──────┴─────────┴────────┴─────┘
+
+┌─────────┬────────────────────────────────────────────────┬───────────────────────────────────┬────────────────┬──────┬─────────┬──────┬─────────┬──────┬─────────┬────────┬─────────┐
+│ (index) │ CA                                             │ Name                              │ Market Cap     │ 1.5x │ TT1.5x  │ 2x   │ TT2x    │ 4x   │ TT4x    │ Rugged │ TTR     │
+├─────────┼────────────────────────────────────────────────┼───────────────────────────────────┼────────────────┼──────┼─────────┼──────┼─────────┼──────┼─────────┼────────┼─────────┤
+│ 0       │ 'FNzibNUSS7yM5NhxrM5onGBPZGrgj7zpDH565eQspump' │ 'stool bundle'                    │ '5916.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 1       │ 'B5KooEquj1RsNxbTX2XDKMMgo35meeQu8YrKXpqrpump' │ 'Stool ai16z'                     │ '6337.62 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 2       │ 'A68CeYRx9VV7egdqg99Yajc4V68uADQt5xZthd7mpump' │ 'Portnoy 2013 Memecoin'           │ '5570.14 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 3       │ 'CseuKtaViThCxXLbDF24FufVDhUdwQu7MF7ajsffpump' │ 'rare ginger albino fur seal pup' │ '6562.69 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 4       │ 'A2jw3Vn9oLEEGeyN9q8xfnFdG3PWk2figQFs6A2vfKiY' │ 'kill nyc'                        │ '5538.40 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 5       │ 'EpKfLt3nxHHojem1vLY7W1C729BRYVWSNdqRHUqxpump' │ 'Contender'                       │ '5541.05 USD'  │ '🟢' │ 3.59    │ '🟢' │ 5.348   │ '🔴' │ ''      │ ''     │ ''      │
+│ 6       │ '87vtNMr8ChKUJHMWCtYvuCgoW4EwY7TMywtANMGPpump' │ 'MarkQunt (LIVE)'                 │ '5794.57 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 7       │ 'yuXhGxdDtSJxbzmnTwo8tvVsT14eCKZy1Aaxe2Bpump'  │ 'Portnoys first shitcoin'         │ '6118.10 USD'  │ '🟢' │ 3.828   │ '🟢' │ 3.753   │ '🔴' │ ''      │ ''     │ ''      │
+│ 8       │ 'GN8Pe8GZZVuRp7Pys1qNaHzpc73jhRLpCY7H72XPpump' │ 'Dave Portnoy'                    │ '19580.89 USD' │ '🟢' │ 207.077 │ '🟢' │ 251.999 │ '🔴' │ ''      │ ''     │ ''      │
+│ 9       │ 'DqT4aVmezfKnXRq8XNrrcWXc4kpgm4rtGosnnDurpump' │ ' XOXO'                           │ '5610.91 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 10      │ 'CX2RfVhYk6zU51W2QmCE5Ly5c6LdkTTSkSYYcPxVpump' │ 'El Charto'                       │ '11984.25 USD' │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 11      │ 'H6N31msPDcQYDhvE7kWWCfiNEGQijmXY9zNCXgcbtDNC' │ 'stool wif dildo'                 │ '5538.40 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 12      │ '1nanDnpe4TqYCVEpZj5BWiJE6iTwhAeRXBeBMHiNiP6'  │ 'Portnoys first shitcoin'         │ '5618.89 USD'  │ '🟢' │ 78.639  │ '🟢' │ 126.35  │ '🔴' │ ''      │ '🚨'   │ 162.453 │
+│ 13      │ '9zHXe7VvNNByV8fktw1NrZLVJKaWmCpArHUBMGRYAP5z' │ 'Tesla.sexy LLC'                  │ '5662.71 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 14      │ '4fr6zQ9vW3usePRpzhddyMEJudhMfbWvWASn1bynpump' │ 'First DogeTracker'               │ '5571.20 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 15      │ '3eP2c3rPsnffpHCBk9cgKUfjsbKDXLRLc6hVEXZbodbb' │ 'Stool Wif Stool'                 │ '6834.81 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 16      │ '65iQ6Skxfkcv3UWnsMxZbwaRfg1pC8JaTka2miRGpump' │ 'Beam Web Scraper'                │ '42887.35 USD' │ '🟢' │ 2.529   │ '🟢' │ 63.784  │ '🟢' │ 244.538 │ ''     │ ''      │
+│ 17      │ 'DyWwCd6eiRyGXDYKmJWo2auj5kqkEeeYHkFsE5Lupump' │ 'Delivering on Gov Efficiency'    │ '5913.78 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 18      │ '2ePm7h7HBfacqCicoV3ybLF6LrnLqJqsAThx7B8hpump' │ 'stool wif dildo'                 │ '5538.40 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 19      │ '7nGdb1BEQdyQURsfSD1oqQ1WQnbKy4mPVt2T3MhXpump' │ 'Fumbler VS Gambler'              │ '5957.09 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 20      │ '6YidFZgJfaSoceu52y4wkHSW948DVdiKVob7BXBHpump' │ 'Trainium AI'                     │ '5574.55 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 21      │ '2HAmyGerk9cjAp7Qa5LoUXCKYfiwwPUMVrBAQZRQpump' │ 'symbol of oneness'               │ '5876.09 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 22      │ 'Ho37uH9ytvE2WYJ2VJbh3eDWckcFXWC8xCKEyz2QmSnJ' │ 'Cupid'                           │ '12577.06 USD' │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 23      │ '9Yf5mBVnLdM4FNDu2eMLb67rhQgGm1vmEbLZceRmf8h4' │ 'Tesla.sexy LLC'                  │ '5538.40 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 24      │ 'C7TDEnTZiiAFi1TEidTEbRfQubQSVEeDjz2vCRUNpump' │ 'Portnoys first shitcoin'         │ '5538.40 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 25      │ '7H1gQsLp49rYZdXzVAttCQkB5AMo1ygL9rD89w2Bpump' │ 'Adolf Pain'                      │ '5540.09 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 26      │ '27tEAGy72g3u13q6FSiDdzEU3jC6NNjGqe2mM3ospump' │ 'OXT'                             │ '5545.78 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 27      │ '7BX2dNkcTUo1U7YzVwUYAuCiXnnm7ACXdzH1d7Bpump'  │ 'MEW'                             │ '7453.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 28      │ '9ecKacGGfmn5qtzkvsM4hvbB3zMQUpmAHKYowJJWaDbc' │ 'Tesla.sexy LLC real logo'        │ '5538.40 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 29      │ 'Fepfr4q1PvYVtr8ZdUJQkVfG1sKgMa3jmXrwiDmSpump' │ 'Edward Coristine Pet Fish'       │ '5549.24 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 30      │ 'ALjovDuWewpMRN7CASHvXPMH8jtfgUqP6ffvimFwRBkV' │ 'c@t'                             │ '6661.35 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 31      │ 'GD7ytNUjPYb6mCGjZiXhzRwEttwz95EmKURGp3gRijwu' │ 'Edward Coristin company'         │ '5545.78 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 32      │ 'HGSgAhaXJcRtW5wHfJ636R3uZhgpiAQUYpL8kdt8rrh5' │ 'hold this'                       │ '5538.40 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 33      │ 'EFpyrScjmpZnbs85sLzoEPc8RBhup8Cb9Au6gz82pump' │ 'Tesla.Sexy'                      │ '5538.40 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 34      │ 'BGBKB2ZvZbF3V42J3MagX3euDPeVrBCBF9FPRRYRpump' │ 'Featurize AI'                    │ '5538.40 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 35      │ 'DuiHQxkAdohbyVrsGAYF8vuYdfrbHyURExric5x5mjmt' │ 'BigBalls Edward Company'         │ '10378.11 USD' │ '🟢' │ 171.572 │ '🟢' │ 195.842 │ '🔴' │ ''      │ ''     │ ''      │
+│ 36      │ '64Chckzr933qpvCxJbe3CGZMT6DJwFCxUCdNryNdLUmP' │ 'Stool Wif Condom'                │ '5940.76 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 37      │ 'FAqSTzEYWCv5nXJP9HgGaq4qu73BLxUmYshAS7Sopump' │ '1st Barstool Pizza Review Ever'  │ '5556.31 USD'  │ '🟢' │ 7.615   │ '🟢' │ 10.593  │ '🔴' │ ''      │ ''     │ ''      │
+│ 38      │ 'J1S4Q5jPSeCwtberbJTdu5hvmA748PAZ9QM2Djuepump' │ 'TESLA 2019 DIGITAL CURRENCY'     │ '5549.41 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 39      │ 'CNYokQaBEPg6u71DdcWUearyrGf2gzGueo27S3zapump' │ 'BNB to the moon'                 │ '5545.78 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 40      │ '3C4ZafcM9rjF9Mn2sd24yJmAkzSBsWQjCgM4Pzk4pump' │ 'Cupid'                           │ '5561.08 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ '🚨'   │ 55.899  │
+│ 41      │ '7jnzbxa7SMLVehKkAYdXGQytGDGxeRJaFr9KEJC6pump' │ 'Cupid'                           │ '5538.66 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 42      │ '4UxkNBEb87m3xKTXhcE1fT5jsJxQwfa5AkutZTH2pump' │ 'smol piza'                       │ '6734.45 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 43      │ '6VyhvXSWravw1Na4WAV4WpPMZv8Xv4WDjUscJFKYpump' │ 'Edward Coristine company '       │ '5545.78 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 44      │ 'qLZTDbQQnu14ERH3LyRwFtRkUm5QvK6zQnRfXTZpump'  │ 'Worlds First Stool'              │ '5545.78 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 45      │ '6UyFF2rhL3U255htwX1c2vgpueQhBTEVX2shF2P1pump' │ 'Sending ‘THIS’ to /Millions'     │ '8307.65 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 46      │ '8amFNHPRoHFBMBLQiADi1Sx4FzxGSvJ6KxPGoQHwXx8f' │ 'Kiti Moto Stools'                │ '5545.78 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 47      │ 'GwcJbGrfGUR69A9tfDtWRa6JUUqwiCREJCk6R5oaVyEK' │ 'hold this'                       │ '5538.40 USD'  │ '🟢' │ 14.753  │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 48      │ '2mt37HrrHg9zu4QD3kw55q4ESEE7oqsYUBmRYFu4pump' │ 'BeetleJuice'                     │ '6127.89 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+│ 49      │ 'GZ45KUNscsrbkwE5kmu41FhwGYuKZ9qmkco6wFN7pump' │ 'stool family'                    │ '5549.24 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''      │ ''     │ ''      │
+└─────────┴────────────────────────────────────────────────┴───────────────────────────────────┴────────────────┴──────┴─────────┴──────┴─────────┴──────┴─────────┴────────┴─────────┘
+
+┌─────────┬────────────────────────────────────────────────┬────────────────────────────────────┬────────────────┬──────┬─────────┬──────┬─────────┬──────┬────────┬────────┬─────────┐
+│ (index) │ CA                                             │ Name                               │ Market Cap     │ 1.5x │ TT1.5x  │ 2x   │ TT2x    │ 4x   │ TT4x   │ Rugged │ TTR     │
+├─────────┼────────────────────────────────────────────────┼────────────────────────────────────┼────────────────┼──────┼─────────┼──────┼─────────┼──────┼────────┼────────┼─────────┤
+│ 0       │ 'HN7xa2tYWkxD3pFgcGcLmZQmiLx5ZkCfTXupJoU4nsYp' │ 'Sex Tool'                         │ '5916.03 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 1       │ '7biqrKKhXShjFrk5ThF1VMyju1CPp5ZHWd6wU9Xws7Ui' │ 'Edward Coristin company'          │ '5623.68 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 2       │ '4PCGnYLPZVzXVVdE8LnL4HdVvVw83UZXawFSPo37pump' │ 'Elons Hedgehog, S3XY'             │ '5556.23 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 3       │ 'CSioFRAUQE1Rrs5dagL4tvQ9qxGhLpNgeEHbWjpM29JG' │ 'Tesla.sexy LLC real logo'         │ '5541.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 4       │ '56dCQ8Xks9oFxyzpc1c3mNEkUVVEZ5cZjSRGV4mwpump' │ 'Nisu AI'                          │ '5672.26 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 5       │ '39ct5ULBbuSGrNsc4WrJ4zsdcJX3ihKpds7sHm8bpump' │ 'TESLA.SEXY MASCOT'                │ '5541.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 6       │ 'FY94X973BUDrXPGqXSFeB2ie4ECQq7514MrQxG49pump' │ 'Corey'                            │ '5542.86 USD'  │ '🟢' │ 30.831  │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 7       │ 'H5oqBRm548PKBJTtCUT8t5kJypLXHmyd3xNnLF1Apump' │ 'Edward Coristine Dog'             │ '5541.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 8       │ 'DEEFzGHC3498MyixnzSJKFcNJ9P3KvoN1h3WLfEuhapD' │ 'poop'                             │ '5594.57 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 276.595 │
+│ 9       │ 'FwN2JmgJkcKZWLeD2tTaQ55NjrDjvSr6r4iaMQSNpump' │ 'Eido-Labs'                        │ '5645.18 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 10      │ '7zbtSfF1YAXtzQ3NcS3MHei8Hgo7MvFv7hnDaJYQpump' │ 'Edward Coristine Dog'             │ '5548.86 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 11      │ '4V8BgeeuKHhnotpzmFQ7gucCVZKR1HYNogzTUZzbpump' │ 'Edward Coristine Family Pet Dog'  │ '5548.86 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 12      │ '7ABdsfoCou9tLBsXB2rBkrsnAAzg2A6mEoHpVJS4hm6Y' │ 'dogetracker'                      │ '5548.86 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 13      │ '2zZqLH89aBgZbiZeF6yNhrHpVHpPfZupMk1Ez8YvrPDp' │ 'doge tracker'                     │ '5548.86 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 14      │ 'Fk9Em5giCKfW128MYhAeVUMbhRyVQeJ74yhkoVHepump' │ 'Heisenberg'                       │ '5917.06 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 15      │ '6EP7TX6nuDWLcYpVCSdatCkirJ1Y7LXnUCnMjwvrdpK'  │ 'Sex Tool'                         │ '5560.04 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 16      │ '5t5N35EcsLosioMGNAdxEhaPJEJ5SmBzDvcpb4wkpump' │ 'Larry'                            │ '5541.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 17      │ '89dheE5MZpAaKweNMHX82TdV47fDtmP9R7im6DjecBhs' │ 'im so'                            │ '5544.34 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 18      │ '3cAqfSTHtXupMcmh8sWosSn3Fd4x99FjUZ6GUcmXpump' │ 'Johoz'                            │ '5616.79 USD'  │ '🟢' │ 127.111 │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 173.247 │
+│ 19      │ 'cvDLBvG18xq9p2cA1nGmEbikcQvL3xeK1Nio5MFYEPE'  │ '卐 YEPE 卐'                       │ '27375.21 USD' │ '🟢' │ 64.437  │ '🟢' │ 134.515 │ '🔴' │ ''     │ '--'   │ ''      │
+│ 20      │ 'Hbr4HUfRrvkV8g9CTFz78SvfMaF7KVxbWpVbXZuLpump' │ 'PIKA ⚡'                          │ '7808.02 USD'  │ '🟢' │ 37.579  │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 51.173  │
+│ 21      │ '2MLMMKJWMKfSgRAtKESdJU5vTU4JnekvjSqFMkeZpump' │ 'Avoid Rug'                        │ '61952.18 USD' │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 22      │ 'Hf7P5B2WoC9APvyXC72b9YHE9NaMhL14Qcdwnwzkpump' │ 'smol dog wif stool'               │ '5541.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 23      │ 'CBL5BGvrER8MuXwQvkNRBCdRE52wS4Ci8zjSWjmMpump' │ 'smoll rock '                      │ '5771.34 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 24      │ '99TmJF14g2sQopoorTvsMPfkj874nt7va6a38dsDpump' │ 'Corey'                            │ '50425.28 USD' │ '🟢' │ 32.389  │ '🟢' │ 48.739  │ '🟢' │ 106.33 │ '--'   │ ''      │
+│ 25      │ '8pWF91Wf96sur91PF5xRAfvFq3t3mzzLdxeGWycvCg8N' │ 'Sniff Tool'                       │ '5577.85 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 26      │ '7GvnqeAnmaoWG47qx6R2dwpTi5ZjmsPb4AJJioyypump' │ 'Ballsfun'                         │ '5617.95 USD'  │ '🟢' │ 8.629   │ '🟢' │ 8.952   │ '🔴' │ ''     │ '--'   │ ''      │
+│ 27      │ 'Ad1RSEhT5DWSuwbFFK5x7dhsxqhV6QPWjsGjcrofGYpo' │ 'Tesla Sexy Llc'                   │ '5548.86 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 28      │ '466veQUBmwwkoVDUwmqepHqchbLZZKwiRL6HQ2uHpump' │ 'Edward Coristine Pet Fish - 2013' │ '7117.71 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 29      │ 'AQWvyv2q76wAu2Ui9FKxpdvffSA3a1FCkKdN9T8Hpump' │ 'DefendR Protocol'                 │ '5541.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 30      │ 'BH1kbiBMRwMyP9S6D7SfLCae9mcKXZCN7cGKwogApump' │ 'Beam Web Scraper'                 │ '5545.17 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 31      │ '41vPogaAkUMW4xQkpbq5sZKmQpvXSXmhre3f5Xqcpump' │ 'REAL Edward Coristine Dog'        │ '5638.92 USD'  │ '🟢' │ 3.045   │ '🟢' │ 6.318   │ '🔴' │ ''     │ '--'   │ ''      │
+│ 32      │ '43Nwv5yLhL4pK8d7YRUoWEGhkhqWE5K1XUfLdUJXpump' │ "Luke's AI agent"                  │ '5548.86 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 33      │ '2CYAnM2Jx9EzkYq2hfB3Q4cG7adaERE6uornp4N9pump' │ 'ImamPeter'                        │ '5982.14 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 34      │ '43Gnqwa66WtUBMtdve6EjiAcDiFbbXTL7LfwYmbmpump' │ 'SciFun'                           │ '6503.53 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 35      │ '7RttTcXLEv5f97RZqYNKjbUgDmbVVBDSXCtZC4J4pump' │ 'Hall of Ye '                      │ '11856.21 USD' │ '🟢' │ 11.018  │ '🟢' │ 24.9    │ '🔴' │ ''     │ '--'   │ ''      │
+│ 36      │ 'BH65ZKtFRn6zWXixVwXckyn4NXMNpa6tqdT6L5wPpump' │ 'Beam Web Scraper'                 │ '5541.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 37      │ 'DZNjHrb3mW66UTU3HmWxfGNBAtpYTWWSrsfX93agySmy' │ 'Sex Tool'                         │ '5549.61 USD'  │ '🟢' │ 48.072  │ '🟢' │ 80.992  │ '🔴' │ ''     │ '--'   │ ''      │
+│ 38      │ '5fZFMRccda8cyhimk2n3yGMLoEbf2F5yQRsC8B67pump' │ 'Edward Coristine Pet Dog - 2013'  │ '5823.92 USD'  │ '🟢' │ 11.859  │ '🟢' │ 12.476  │ '🔴' │ ''     │ '--'   │ ''      │
+│ 39      │ '31uP6ZctTGx8NAcHLx68TCVx8HEd27m45kzGGTbcpump' │ 'little balls'                     │ '21012.56 USD' │ '🟢' │ 2.957   │ '🟢' │ 2.967   │ '🟢' │ 24.251 │ '--'   │ ''      │
+│ 40      │ '75Gi7KkPE2jRJkPzrnxWPM5VHxxUdTqVsRvrnpcCpump' │ 'Edward Coristine Dog'             │ '5548.86 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 41      │ '7pgFcTj9XULjQU29X1T7Qdy41wWQsnEZVUUdtrgGpump' │ 'ROCKSTAR'                         │ '19318.22 USD' │ '🟢' │ 84.999  │ '🟢' │ 169.855 │ '🔴' │ ''     │ '--'   │ ''      │
+│ 42      │ '2QSNrtoJcmjjSA5o1vheuk3fNLdPiN9J2FKaf21Ppump' │ 'Edward Coristine Github'          │ '5552.33 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 43      │ 'EpnfrNJL2EAumFhNLABu7mhQd35s9jyS1fV6Bz2apump' │ 'Metaland'                         │ '5548.86 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 44      │ '5pJvGxu5q188RSiKRMq1bqEjyDPYtwdQebFTgvfbpump' │ 'DeepAnalyzer AI'                  │ '5698.08 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 45      │ 'YYX5F1B5JR7eTnXo7W8riiLaPX8KXiun3xxw1yapump'  │ 'BIGFARTS'                         │ '5831.07 USD'  │ '🟢' │ 10.245  │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 46      │ '3NC2TFKd87imcTJeBHZ1qqon7RgxtgQuWEti3u1Upump' │ 'Justice for Big Tech'             │ '5544.33 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 47      │ '57gey2ZjjC3KNFLdNqqLfrNBCHKwdFDSHa4ncAvGpump' │ 'Larry'                            │ '5541.47 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 48      │ 'AXKsSWJWqeq5MwabFvTsF2VBLk1KfqaR1xff6VMXc8VV' │ 'Edward Coristine Pet Dog - 2013'  │ '5568.97 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 47.261  │
+│ 49      │ 'HcHTpz7rPUp5SvXUVRY1UAmzXsqPZMGUCcudNygFTwzM' │ 'Balaji'                           │ '5556.96 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+└─────────┴────────────────────────────────────────────────┴────────────────────────────────────┴────────────────┴──────┴─────────┴──────┴─────────┴──────┴────────┴────────┴─────────┘
+
+┌─────────┬────────────────────────────────────────────────┬────────────────────────────────────┬────────────────┬──────┬─────────┬──────┬─────────┬──────┬────────┬────────┬─────────┐
+│ (index) │ CA                                             │ Name                               │ Market Cap     │ 1.5x │ TT1.5x  │ 2x   │ TT2x    │ 4x   │ TT4x   │ Rugged │ TTR     │
+├─────────┼────────────────────────────────────────────────┼────────────────────────────────────┼────────────────┼──────┼─────────┼──────┼─────────┼──────┼────────┼────────┼─────────┤
+│ 0       │ 'Fm125foCxvRYvq6kt5UQjN9oqy3wocWF35dmSEWrS19Q' │ 'Bodoggos Cabal'                   │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 1       │ 'GP8VCxcY7yPWpj5Mco3qPmWp98ZDq9aRrHuRZvenpump' │ 'Help Dave Coin'                   │ '9054.25 USD'  │ '🟢' │ 98.52   │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 103.544 │
+│ 2       │ '5iCiYW2ZyL1rX275kArFdUeRPgQWYFYYFZyEbs8T21nv' │ 'bodoggos cabal'                   │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 3       │ 'Eti6r46CQWhZw18TPVXHTyT8eMYVMT3EKbHLSpKwpump' │ 'JASPER AI'                        │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 94.745  │
+│ 4       │ 'DAkNKwrw2okAevoXoESbBrKasChfeHdxompQpQAHpump' │ 'The Next Bitcoin'                 │ '7743.35 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 5       │ '4XcimbB8r1zN2Gm8u33wNzQqo9fAxLFBQ1ciJTSxpump' │ 'Country YE'                       │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 6       │ 'EEwAJ6imi8vcgZaFffazoVwb8X6sCmJfGvhwdGnPpump' │ 'BigBallsInu'                      │ '5705.93 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 7       │ '5usw3aLy2MstAK4m8WsEV3iEN8UW7sw9K91xwohmwNnY' │ 'Ginger Mongolian'                 │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 8       │ '2vn836ZBT4UFmgLkTUqyYBBdtLgcEs9oHnTpRBNgVBcF' │ 'Klarna'                           │ '5568.31 USD'  │ '🟢' │ 1.847   │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 4.812   │
+│ 9       │ 'CeKwR6nSgbeTiXTuYHdCjLzD1Erq77dSYsCcuDx4imMR' │ 'ALRIS AGENT'                      │ '5572.84 USD'  │ '🟢' │ 267.124 │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 481.248 │
+│ 10      │ '3BMTGT9MBYnQbhYpdAfpxvZtA8y8hEJ9XJF9EHqapump' │ 'Serial Experiments Lain : AI'     │ '5593.85 USD'  │ '🟢' │ 276.312 │ '🟢' │ 536.89  │ '🔴' │ ''     │ '🚨'   │ 583.154 │
+│ 11      │ '6cw3rPuNUBoC867XjgYoh37SCiCPRsD7oujHMYKGpump' │ 'DOGE OFFICIAL TREASURY COIN BILL' │ '5568.32 USD'  │ '🟢' │ 8.724   │ '🟢' │ 11.042  │ '🔴' │ ''     │ '🚨'   │ 17.865  │
+│ 12      │ '2ogVniiBLYcbQ7JsQPor3dY3n84KC7MqbGMLzCR2pump' │ 'dogchickenballs'                  │ '9991.35 USD'  │ '🟢' │ 38.49   │ '🟢' │ 60.147  │ '🔴' │ ''     │ '🚨'   │ 188.37  │
+│ 13      │ '2h3gbu9VZMJ1VcojeoHWKpAW7qQKLFP4LmnpqsZ5HZUa' │ 'JUSTICE FOR TRUMP ASSASSIN'       │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 14      │ 'AusTrLjbsadBLnJVhx4aaxc2ZfH9qzphMHzJ7MDZpump' │ 'Kelce'                            │ '5613.79 USD'  │ '🟢' │ 3.632   │ '🟢' │ 30.61   │ '🔴' │ ''     │ '🚨'   │ 111.392 │
+│ 15      │ '8zj6XgUZYZQa26nPw4C5EJdDNPXHwcRRF8b1jwWMpump' │ 'Klarna Crypto'                    │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 16      │ 'BtiX6Jmf3LaCN8yApU49kwoKA1FosQiKCLaYvx22G6aQ' │ 'klarna coin'                      │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 17      │ 'FMHNMffmUpVb25vuiUEtizG29MF3buN8KxdDMkpUpump' │ 'Crispy'                           │ '6802.57 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 18      │ '7Fc6rwYS8toZm8Hex3RoeHWkNkqSsu88oW8sd2NosHvo' │ 'KLARNA COIN'                      │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 28.812  │
+│ 19      │ '3YRWjwhLHAySjWAGvDSNGFE5gBzXiEQ9AUbWXr38pump' │ 'First Balls To 1 Ballion '        │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 20      │ '2wmmD9Ry7XdBE1RDBY4mYTBDEmm1HoPauMCuEAHopump' │ 'Kim Wrong Un'                     │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 21      │ 'E97KTYEpZnjPatpw8DZZLg4kQncSY7fypZE8ySUgpump' │ 'Big Blue Balls'                   │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 22      │ '3ad9TmabpHgyyuqTmqK6KMe6pcZxkhReYkkDoqtwpump' │ 'MatrixBreak'                      │ '17372.14 USD' │ '🟢' │ 68.973  │ '🟢' │ 209.703 │ '🔴' │ ''     │ '--'   │ ''      │
+│ 23      │ 'GmJvpZu5qrGheygpdpfyfbFpR3Q6mzLVMi3JXT9Bpump' │ 'Small Asian Balls'                │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 24      │ '6XgEKZbeFMrF5ZUGAjrNqdcATeEXsD1wx4BreNpGJpQ2' │ 'WOJAK'                            │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 36.13   │
+│ 25      │ '63E5ropzQC87A5ZTXHqPizhjKk8BLXQr6UGgj4xShvaZ' │ 'klarna'                           │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 26      │ '4aBG7UJfbLHe5uPA61XXE85aNof8ouc4yDprfC2Kpump' │ 'MOST OLDEST SOLANA COIN'          │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 27      │ 'BKeo2mu12wHDDXLeVEhLPDPa78VaiNfefMxg8tEzpump' │ '132LB BIGGEST BALLS'              │ '5568.31 USD'  │ '🟢' │ 0.931   │ '🟢' │ 1.4     │ '🔴' │ ''     │ '🚨'   │ 220.227 │
+│ 28      │ 'BKUdQsciAvtvheFZjXW31FRXQ5qcVoM94RacbidApump' │ 'Kanye Test SOL'                   │ '5948.60 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 436.418 │
+│ 29      │ 'Bq3xoKiNtRZ4xSTawn7bCzozWTayboLtdRZsvBmKpump' │ 'Superbowl LIX Coin'               │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 30      │ '637iWkatpAfSHFW7EskaeX3y6bKAfnuFEMGiW5KHpump' │ 'Freedom Fights Back'              │ '6624.64 USD'  │ '🟢' │ 11.342  │ '🟢' │ 13.196  │ '🟢' │ 29.321 │ '🚨'   │ 39.967  │
+│ 31      │ 'nG3HRxcVCntzVssbFUzdxMbpCxcSFWksXqr1xmuddj2'  │ 'Singing Seal'                     │ '5577.73 USD'  │ '🟢' │ 83.104  │ '🟢' │ 132.43  │ '🔴' │ ''     │ '🚨'   │ 196.035 │
+│ 32      │ '3cZP1dKeEsivLVnw6pTCUbiKn1bzkAapXmzgz9LZpump' │ 'Eli5 That'                        │ '5571.24 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 22.483  │
+│ 33      │ '6KVSg1m1zp8hexNne2BhSn4kHtQz5rCY9jtvByyapump' │ 'I WONT DIE'                       │ '7169.01 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 34      │ '9wHExpo9pfsLoFmw1TNZQbUcykEamnegcbj8128ChfAQ' │ 'we are so cooked'                 │ '5568.31 USD'  │ '🟢' │ 3.975   │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 62.93   │
+│ 35      │ 'H1v2eSYmd2bHhzLGye9ZB5QEQy8xWpvtHcXVdgZgpump' │ 'MinetardAI'                       │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 36      │ 'BKC9iqScg2WEkz8dHwiTdryoBXZh2aaeGCFiE4GUpump' │ 'TRUMP BUYS CRYPTO'                │ '5638.30 USD'  │ '🟢' │ 6.226   │ '🟢' │ 6.799   │ '🔴' │ ''     │ '🚨'   │ 38.174  │
+│ 37      │ 'E67A3d7sXpJLhJKTUTjojBLSJPuWpyGDsSy7vncGpump' │ 'Justice for Kristi Noem'          │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 38      │ 'AqVjoEFTPEzcXyyyXAcF24f8nQiBEiiSEsBR4C5upump' │ 'LaunchOnMiaDotFun'                │ '5615.35 USD'  │ '🟢' │ 2.074   │ '🟢' │ 22.516  │ '🟢' │ 47.586 │ '🚨'   │ 69.334  │
+│ 39      │ 'HbyeWm7pedD5FjU6re1h89Jwv1mUX8jWsQ9yQXv9pump' │ 'Klarna'                           │ '5571.78 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 40      │ 'ABmTF5Ybx4tYuwnW9LeGoVAURWiwzPrzvQmJYBEupump' │ 'Ballstool Sports'                 │ '9251.71 USD'  │ '🟢' │ 161.33  │ '🟢' │ 167.868 │ '🔴' │ ''     │ '🚨'   │ 171.98  │
+│ 41      │ 'BKhe7GJ6vL4bQZzYxbrSykEG5Sh1xhRt5jnwSt9zpump' │ 'SMOL BLACK ROCK'                  │ '5616.60 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 42      │ 'Eyi8N6Zirognuw3LcBcPbUGTSLJ9r3AAvFELyFKEpump' │ 'Balls Club'                       │ '6603.81 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 43      │ '3cAEMk9PbQsDo3CexyKspiTNBmTYhja2rRmZAowNpump' │ 'BUNDLECHECK'                      │ '5604.84 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 44      │ '4jXze3obeRR6JYbzgVho3hwEECu2D2yS21nJPaEhpump' │ 'Freedom Fights Back'              │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 40.495  │
+│ 45      │ '8xWCVg4gdYB1CKCe6zhm1REtw4e2BD8yK8DYBtWGpump' │ 'ICHIGO Engine'                    │ '5568.31 USD'  │ '🟢' │ 132.932 │ '🔴' │ ''      │ '🔴' │ ''     │ '🚨'   │ 281.204 │
+│ 46      │ 'CAPzrYW3MCKYy14stWrc6yAaMidLEczdTfBcrTgRpump' │ 'CRYBABIES'                        │ '6750.09 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 47      │ 'CBXTFneyt3Wq885wafArQ4jrovX5DPRtLWUp2uvnpump' │ '#1 Biggest Balls Dog'             │ '5571.78 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+│ 48      │ 'H5wXs3V2P9HafvLeJuWmwjMwQgobSNFspjQehbiXpump' │ 'MinetardAI'                       │ '5607.74 USD'  │ '🟢' │ 5.555   │ '🟢' │ 137.037 │ '🔴' │ ''     │ '🚨'   │ 149.964 │
+│ 49      │ 'FWAVViXNc7tVKyKiaz7PjuBdhxzf2dgz5DzzP3m9pump' │ 'USAID'                            │ '5568.31 USD'  │ '🔴' │ ''      │ '🔴' │ ''      │ '🔴' │ ''     │ '--'   │ ''      │
+└─────────┴────────────────────────────────────────────────┴────────────────────────────────────┴────────────────┴──────┴─────────┴──────┴─────────┴──────┴────────┴────────┴─────────┘
+

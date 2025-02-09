@@ -4,6 +4,7 @@ import { WalletManager } from "./wallet";
 import { config } from "dotenv";
 
 config({ path: `${__dirname}/../../.env` });
+const MAX_ACTIVE_TRADES = Number(process.env.MAX_ACTIVE_TRADES!);
 const MIN_MARKET_CAP_SOL = Number(process.env.MIN_MARKET_CAP_SOL!);
 const MIN_LIQUIDITY_SOL = Number(process.env.MIN_LIQUIDITY_SOL!);
 
@@ -36,13 +37,13 @@ export class Trader {
 
   public async buyToken(token: any) {
     this.addActiveTrade(token);
-    if (this.getActiveTrades().length >= 4) {
+    if (this.getActiveTrades().length >= MAX_ACTIVE_TRADES) {
       this.clearUnverifiedTokens();
     }
     showOutput({
       activeTokens: this.getActiveTrades(),
       walletManager: this.walletManager,
-      text: `🔼 Buying ${token.name}...`,
+      text: `🟢 Buying ${token.name}...`,
     });
   }
 
@@ -59,7 +60,7 @@ export class Trader {
 
   async isSafeToken(message: any): Promise<{ safe: boolean; reason?: string }> {
     try {
-      if (this.getActiveTrades().length >= 4)
+      if (this.getActiveTrades().length >= MAX_ACTIVE_TRADES)
         return {
           safe: false,
           reason: "🧢 Trade limit reached",
@@ -95,7 +96,10 @@ export class Trader {
 
       return { safe: true };
     } catch (error) {
-      return { safe: false, reason: "Error checking token safety" };
+      return {
+        safe: false,
+        reason: "Error checking token safety" + `\n${error}`,
+      };
     }
   }
 }
