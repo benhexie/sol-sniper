@@ -229,7 +229,7 @@ export class SubscriptionManager {
         return;
       }
       if (
-        Math.floor((new Date().getTime() - token.createdAt.getTime()) / 1000) >
+        (new Date().getTime() - token.createdAt.getTime() / 1000) >
         MAX_TOKEN_AGE
       ) {
         showOutput({
@@ -303,11 +303,15 @@ export class SubscriptionManager {
   }
 
   addTradingHistory(token: Token) {
+    if (this.tradingHistory.find((t) => t.mint === token.mint)) return;
     this.tradingHistory.push(token);
   }
 
   addAllActiveTradesToHistory() {
-    this.tradingHistory.push(...this.activeTrades);
+    for (const token of this.activeTrades) {
+      if (this.tradingHistory.find((t) => t.mint === token.mint)) continue;
+      this.tradingHistory.push(token);
+    }
     this.activeTrades = [];
   }
 
