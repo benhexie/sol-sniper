@@ -97,17 +97,30 @@ export class Trader {
     });
     this.addTradingHistory(token);
     token.sellPrice = token.currentPrice as number;
+
+    // Safety checks for calculations
+    let buyPrice = Number(token.buyPrice);
+    const sellPrice = Number(token.sellPrice);
+
+    if (!buyPrice || buyPrice <= 0) buyPrice = 0.000000001;
+
+    const profitMultiplier = (sellPrice - buyPrice) / buyPrice;
+    const cappedProfitMultiplier = Math.min(profitMultiplier, 10);
+
     this.walletManager.updateBalance(
-      BUY_AMOUNT_SOL +
-        ((Number(token.sellPrice) - Number(token.buyPrice)) /
-          Number(token.buyPrice)) *
-          BUY_AMOUNT_SOL -
-        0.01
+      BUY_AMOUNT_SOL + cappedProfitMultiplier * BUY_AMOUNT_SOL - 0.01
     );
   }
 
   async isSafeToken(message: any): Promise<{ safe: boolean; reason?: string }> {
     try {
+      if ((await this.walletManager.getBalance()) <= BUY_AMOUNT_SOL + 0.01) {
+        return {
+          safe: false,
+          reason: "Insufficient balance to buy token",
+        };
+      }
+
       const marketCapSol =
         message.marketCapSol === "--" ? 0 : message.marketCapSol;
       const vSolInBondingCurve =

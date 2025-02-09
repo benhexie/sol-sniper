@@ -4,12 +4,16 @@ import { WalletManager } from "./wallet";
 import { SubscriptionManager } from "./subscriptionManager";
 import { showOutput } from "./output";
 import { TradeReport } from "./tradeReport";
+const readline = require("readline");
 config();
 
 export class SniperBot {
   private connection: Connection;
   private walletManager: WalletManager;
   private subscriptionManager: SubscriptionManager;
+  private keypressListener: NodeJS.ReadStream & {
+    fd: 0;
+  };
 
   constructor() {
     // Configuration
@@ -21,9 +25,18 @@ export class SniperBot {
     this.walletManager = new WalletManager(this.connection, PRIVATE_KEY);
     this.subscriptionManager = new SubscriptionManager(this.walletManager);
 
+    readline.emitKeypressEvents(process.stdin);
+    process.stdin.setRawMode(true);
+
+    this.keypressListener = process.stdin.on("keypress", (str, key) => {
+      if ((key.ctrl || key.meta) && key.name === "c") {
+        this.shutdown.call(this);
+      }
+    });
+
     // Bind shutdown to process signals
-    process.on("SIGINT", this.shutdown.bind(this));
-    process.on("SIGTERM", this.shutdown.bind(this));
+    // process.on("SIGINT", this.shutdown.bind(this));
+    // process.on("SIGTERM", this.shutdown.bind(this));
   }
 
   start() {
@@ -46,7 +59,7 @@ export class SniperBot {
       this.subscriptionManager.getTradingHistory(),
       this.walletManager
     );
-
+    
     process.exit(0);
   }
 }

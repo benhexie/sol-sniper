@@ -18,12 +18,12 @@ export interface Token {
   currentPrice: number | "--";
   marketCapSol: number | "--";
   vSolInBondingCurve: number | "--";
-  hit150?: boolean;
+  hit120?: boolean;
   hit200?: boolean;
   hit400?: boolean;
   rugged?: boolean;
   createdAt: Date;
-  timeTo150?: number | "";
+  timeTo120?: number | "";
   timeTo200?: number | "";
   timeTo400?: number | "";
   timeToRug?: number | "";
@@ -104,11 +104,11 @@ export class SubscriptionManager {
       currentPrice: "--",
       marketCapSol: "--",
       vSolInBondingCurve: "--",
-      hit150: false,
+      hit120: false,
       hit200: false,
       hit400: false,
       rugged: false,
-      timeTo150: "",
+      timeTo120: "",
       timeTo200: "",
       timeTo400: "",
       timeToRug: "",
@@ -171,7 +171,7 @@ export class SubscriptionManager {
             ((token.hit200 &&
               Number(token.currentPrice) <= token.maxPrice * 0.7) ||
               // If hit 1.5x but dropped 20% from peak
-              (token.hit150 &&
+              (token.hit120 &&
                 Number(token.currentPrice) <= token.maxPrice * 0.8))) ||
           // Condition 3: Rapid price decline
           (token.maxPrice &&
@@ -191,8 +191,10 @@ export class SubscriptionManager {
               Number(token.buyPrice)) *
               BUY_AMOUNT_SOL <=
           0.01
-        )
+        ) {
+          this.removeActiveTrade(token);
           return;
+        }
 
         this.trader.sellToken(token);
       }
@@ -239,10 +241,10 @@ export class SubscriptionManager {
         this.removeUnverifiedToken(token);
         return;
       }
-      if (Number(token.currentPrice) >= Number(token.scoutPrice) * 1.5) {
+      if (Number(token.currentPrice) >= Number(token.scoutPrice) * 1.2) {
         this.trader.buyToken(token);
-        token.hit150 = true;
-        token.timeTo150 =
+        token.hit120 = true;
+        token.timeTo120 =
           (new Date().getTime() - token.createdAt.getTime()) / 1000;
       }
     }

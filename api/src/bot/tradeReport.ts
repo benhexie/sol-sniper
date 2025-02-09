@@ -30,19 +30,23 @@ export class TradeReport {
         return:
           ((Number(t.sellPrice) - Number(t.buyPrice)) / Number(t.buyPrice)) *
           100,
-        timeToProfit: t.timeTo150 ? Number(t.timeTo150) : 0,
+        timeToProfit: t.timeTo120 ? Number(t.timeTo120) : 0,
       }))
       .sort((a, b) => b.return - a.return);
 
-    const bestTrade = tradesWithReturns[0];
-    const worstTrade = tradesWithReturns[tradesWithReturns.length - 1];
+    const bestTrade =
+      tradesWithReturns.length > 0 ? tradesWithReturns[0] : null;
+    const worstTrade =
+      tradesWithReturns.length > 0
+        ? tradesWithReturns[tradesWithReturns.length - 1]
+        : null;
 
-    // Calculate average time to 1.5x
-    const avgTimeTo150 =
+    // Calculate average time to 1.2x
+    const avgTimeTo120 =
       tradingHistory
-        .filter((t) => t.timeTo150)
-        .reduce((acc, t) => acc + (Number(t.timeTo150) || 0), 0) /
-        tradingHistory.filter((t) => t.timeTo150).length || 0;
+        .filter((t) => t.timeTo120)
+        .reduce((acc, t) => acc + (Number(t.timeTo120) || 0), 0) /
+        tradingHistory.filter((t) => t.timeTo120).length || 0;
 
     // Generate report
     showOutput({
@@ -67,7 +71,7 @@ export class TradeReport {
 • Return: ${worstTrade ? worstTrade.return.toFixed(2) : 0}%
 
 ⚡ Trading Speed:
-• Average Time to 1.5x: ${avgTimeTo150.toFixed(1)}s
+• Average Time to 1.5x: ${avgTimeTo120.toFixed(1)}s
 
 Session ended at: ${new Date().toLocaleString()}
 ═══════════════════════`,
