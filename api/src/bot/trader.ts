@@ -7,6 +7,7 @@ config({ path: `${__dirname}/../../.env` });
 const MAX_ACTIVE_TRADES = Number(process.env.MAX_ACTIVE_TRADES!);
 const MIN_MARKET_CAP_SOL = Number(process.env.MIN_MARKET_CAP_SOL!);
 const MIN_LIQUIDITY_SOL = Number(process.env.MIN_LIQUIDITY_SOL!);
+const BUY_AMOUNT_SOL = Number(process.env.BUY_AMOUNT_SOL!);
 
 export class Trader {
   private getActiveTrades: () => Token[];
@@ -14,6 +15,10 @@ export class Trader {
   private addActiveTrade: (token: Token) => void;
   private walletManager: WalletManager;
   private clearUnverifiedTokens: () => void;
+  private addTradingHistory: (token: Token) => void;
+  private getTradingHistory: () => Token[];
+  private unverifiedTokens: Token[];
+  private removeUnverifiedToken: (token: Token) => void;
 
   constructor({
     getActiveTrades,
@@ -21,21 +26,51 @@ export class Trader {
     addActiveTrade,
     walletManager,
     clearUnverifiedTokens,
+    addTradingHistory,
+    getTradingHistory,
+    unverifiedTokens,
+    removeUnverifiedToken,
   }: {
     getActiveTrades: () => Token[];
     removeActiveTrade: (token: Token) => void;
     addActiveTrade: (token: Token) => void;
     walletManager: WalletManager;
     clearUnverifiedTokens: () => void;
+    addTradingHistory: (token: Token) => void;
+    getTradingHistory: () => Token[];
+    unverifiedTokens: Token[];
+    removeUnverifiedToken: (token: Token) => void;
   }) {
     this.getActiveTrades = getActiveTrades;
     this.removeActiveTrade = removeActiveTrade;
     this.addActiveTrade = addActiveTrade;
     this.walletManager = walletManager;
     this.clearUnverifiedTokens = clearUnverifiedTokens;
+    this.addTradingHistory = addTradingHistory;
+    this.getTradingHistory = getTradingHistory;
+    this.unverifiedTokens = unverifiedTokens;
+    this.removeUnverifiedToken = removeUnverifiedToken;
   }
 
-  public async buyToken(token: any) {
+  private clearFinishedTrades() {
+    this.getActiveTrades().forEach((token) => {
+      if (this.getTradingHistory().some((t) => t.mint === token.mint)) {
+        this.removeActiveTrade(token);
+      }
+    });
+  }
+
+  public async buyToken(token: Token) {
+    if (this.getActiveTrades().length >= MAX_ACTIVE_TRADES)
+      this.clearFinishedTrades();
+
+    if (this.getActiveTrades().length >= MAX_ACTIVE_TRADES) {
+      this.removeUnverifiedToken(token);
+      return {
+        safe: false,
+        reason: "🧢 Trade limit reached",
+      };
+    }
     this.addActiveTrade(token);
     if (this.getActiveTrades().length >= MAX_ACTIVE_TRADES) {
       this.clearUnverifiedTokens();
@@ -44,28 +79,35 @@ export class Trader {
       activeTokens: this.getActiveTrades(),
       walletManager: this.walletManager,
       text: `🟢 Buying ${token.name}...`,
+      unverifiedTokens: this.unverifiedTokens,
     });
+    token.buyPrice = token.currentPrice as number;
+    const fees = (() => {
+      return 0.01;
+    })();
+    this.walletManager.updateBalance(-(BUY_AMOUNT_SOL + fees));
   }
 
-  public async sellToken(token: any, percentage: "50" | "100") {
+  public async sellToken(token: Token) {
     showOutput({
       activeTokens: this.getActiveTrades(),
       walletManager: this.walletManager,
-      text: `🔻 Selling ${percentage === "100" ? "all" : "half"} of ${
-        token.name
-      }...`,
+      text: `🔻 Selling ${token.name}...`,
+      unverifiedTokens: this.unverifiedTokens,
     });
-    if (percentage === "100") this.removeActiveTrade(token);
+    this.addTradingHistory(token);
+    token.sellPrice = token.currentPrice as number;
+    this.walletManager.updateBalance(
+      BUY_AMOUNT_SOL +
+        ((Number(token.sellPrice) - Number(token.buyPrice)) /
+          Number(token.buyPrice)) *
+          BUY_AMOUNT_SOL -
+        0.01
+    );
   }
 
   async isSafeToken(message: any): Promise<{ safe: boolean; reason?: string }> {
     try {
-      if (this.getActiveTrades().length >= MAX_ACTIVE_TRADES)
-        return {
-          safe: false,
-          reason: "🧢 Trade limit reached",
-        };
-
       const marketCapSol =
         message.marketCapSol === "--" ? 0 : message.marketCapSol;
       const vSolInBondingCurve =

@@ -7,6 +7,8 @@ config({ path: `${__dirname}/../../.env` });
 
 const MAX_ACTIVE_TRADES = Number(process.env.MAX_ACTIVE_TRADES!);
 const MAX_UNVERIFIED_TRADES = Number(process.env.MAX_UNVERIFIED_TRADES!);
+const MAX_TOKEN_AGE = Number(process.env.MAX_TOKEN_AGE!);
+const MIN_LIQUIDITY_SOL = Number(process.env.MIN_LIQUIDITY_SOL!);
 
 export interface Token {
   mint: string;
@@ -25,6 +27,8 @@ export interface Token {
   timeTo400?: number | "";
   timeToRug?: number | "";
   maxPrice?: number;
+  buyPrice?: number;
+  sellPrice?: number;
 }
 
 export class SubscriptionManager {
@@ -45,6 +49,11 @@ export class SubscriptionManager {
       addActiveTrade: (token: Token) => this.addActiveTrade(token),
       walletManager: this.walletManager,
       clearUnverifiedTokens: () => this.clearUnverifiedTokens(),
+      addTradingHistory: (token: Token) => this.addTradingHistory(token),
+      getTradingHistory: () => this.tradingHistory,
+      unverifiedTokens: this.unverifiedTokens,
+      removeUnverifiedToken: (token: Token) =>
+        this.removeUnverifiedToken(token),
     });
     this.ws = new WebSocket("wss://pumpportal.fun/api/data");
 
@@ -74,6 +83,7 @@ export class SubscriptionManager {
       showOutput({
         activeTokens: this.activeTrades,
         walletManager: this.walletManager,
+        unverifiedTokens: this.unverifiedTokens,
         text: `🚨 Insufficient balance. Minimum balance is 0.01 SOL`,
       });
       return;
@@ -81,7 +91,6 @@ export class SubscriptionManager {
 
     if (
       this.activeTrades.find((trade) => trade.mint === message.mint) ||
-      this.activeTrades.length >= MAX_ACTIVE_TRADES ||
       this.unverifiedTokens.length >= MAX_UNVERIFIED_TRADES
     ) {
       return;
@@ -110,6 +119,7 @@ export class SubscriptionManager {
     showOutput({
       activeTokens: this.activeTrades,
       walletManager: this.walletManager,
+      unverifiedTokens: this.unverifiedTokens,
     });
 
     this.subscribeToTokenTrade();
@@ -137,6 +147,7 @@ export class SubscriptionManager {
         token.hit400 = true;
         token.timeTo400 =
           (new Date().getTime() - token.createdAt.getTime()) / 1000;
+        this.trader.sellToken(token);
       } else if (
         !token.rugged &&
         !token.hit200 &&
@@ -145,31 +156,48 @@ export class SubscriptionManager {
         token.hit200 = true;
         token.timeTo200 =
           (new Date().getTime() - token.createdAt.getTime()) / 1000;
+        if (Math.floor(Number(token.timeTo150)) > 1)
+          this.trader.sellToken(token);
       }
       if (
-        !token.rugged ||
-        message.marketCapSol * this.walletManager.solPriceInUSD >= 80000 ||
-        Number(token.currentPrice) <= token.maxPrice! * 0.6 ||
-        (token.hit200 &&
-          (tokenPriceInSol - Number(token.scoutPrice)) /
-            (token.maxPrice! - Number(token.scoutPrice)) <
-            0.5)
+        !token.rugged &&
+        !token.hit400 &&
+        // Condition 1: Market cap reaches high value - take profits
+        (message.marketCapSol * this.walletManager.solPriceInUSD >= 80000 ||
+          // Condition 2: Price drops significantly from peak after hitting milestones
+          (token.maxPrice &&
+            // If hit 2x but dropped 30% from peak
+            ((token.hit200 &&
+              Number(token.currentPrice) <= token.maxPrice * 0.7) ||
+              // If hit 1.5x but dropped 20% from peak
+              (token.hit150 &&
+                Number(token.currentPrice) <= token.maxPrice * 0.8))) ||
+          // Condition 3: Rapid price decline
+          (token.maxPrice &&
+            Number(token.currentPrice) <= token.maxPrice * 0.6 &&
+            (new Date().getTime() - token.createdAt.getTime()) / 1000 <= 300) || // 5 minutes
+          // Condition 4: Volume/liquidity concerns
+          message.vSolInBondingCurve < MIN_LIQUIDITY_SOL * 0.8) // Liquidity dropping
       ) {
         token.rugged = true;
         token.timeToRug =
           (new Date().getTime() - token.createdAt.getTime()) / 1000;
+
+        // Only exit if we're at a loss greater than 10%
         if (
-          (tokenPriceInSol - Number(token.scoutPrice)) /
-            Number(token.scoutPrice) <=
+          (Number(token.currentPrice) - Number(token.buyPrice)) /
+            Number(token.buyPrice) <=
           -0.1
         )
           return;
-        // sell
+
+        this.trader.sellToken(token);
       }
 
       showOutput({
         activeTokens: this.activeTrades,
         walletManager: this.walletManager,
+        unverifiedTokens: this.unverifiedTokens,
       });
     } else {
       const token = this.unverifiedTokens.find((trade) => trade.mint === mint);
@@ -189,6 +217,7 @@ export class SubscriptionManager {
         showOutput({
           activeTokens: this.activeTrades,
           walletManager: this.walletManager,
+          unverifiedTokens: this.unverifiedTokens,
           text: `🚨 ${isSafe.reason}`,
         });
         this.removeUnverifiedToken(token);
@@ -196,11 +225,12 @@ export class SubscriptionManager {
       }
       if (
         Math.floor((new Date().getTime() - token.createdAt.getTime()) / 1000) >
-        5
+        MAX_TOKEN_AGE
       ) {
         showOutput({
           activeTokens: this.activeTrades,
           walletManager: this.walletManager,
+          unverifiedTokens: this.unverifiedTokens,
           text: `👴 Token is too old - Removed "${token.name}"`,
         });
         this.removeUnverifiedToken(token);
@@ -265,6 +295,15 @@ export class SubscriptionManager {
 
   getTradingHistory() {
     return this.tradingHistory;
+  }
+
+  addTradingHistory(token: Token) {
+    this.tradingHistory.push(token);
+  }
+
+  addAllActiveTradesToHistory() {
+    this.tradingHistory.push(...this.activeTrades);
+    this.activeTrades = [];
   }
 
   getActiveTrades() {

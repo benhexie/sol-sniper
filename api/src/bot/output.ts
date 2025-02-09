@@ -5,10 +5,12 @@ let lastOutput: string = "";
 
 export const showOutput = async ({
   activeTokens,
+  unverifiedTokens,
   walletManager,
   text,
 }: {
   activeTokens: Token[];
+  unverifiedTokens?: Token[];
   walletManager: WalletManager;
   text?: string;
 }) => {
@@ -50,7 +52,12 @@ export const showOutput = async ({
 
   console.clear();
   console.log(`💼 Wallet Balance: ${balance} SOL`);
-  console.log(`💰 SOL Price: ${walletManager.solPriceInUSD} USD\n\n`);
+  console.log(
+    `💰 SOL Price: ${walletManager.solPriceInUSD.toFixed(2)} USD\n\n`
+  );
+  if (unverifiedTokens && unverifiedTokens.length > 0) {
+    console.log("🚨 Unverified Tokens: " + unverifiedTokens.length);
+  }
   console.table(table);
   if (text) lastOutput = text + "\n\n";
   if (lastOutput) console.log(lastOutput);

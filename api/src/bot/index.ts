@@ -2,9 +2,14 @@ import { Connection } from "@solana/web3.js";
 import { config } from "dotenv";
 import { WalletManager } from "./wallet";
 import { SubscriptionManager } from "./subscriptionManager";
+import { showOutput } from "./output";
 config();
 
 export class SniperBot {
+  private connection: Connection;
+  private walletManager: WalletManager;
+  private subscriptionManager: SubscriptionManager;
+
   constructor() {
     // Configuration
     const SOLANA_RPC_URL = process.env.SOLANA_RPC_URL!;
@@ -17,9 +22,9 @@ export class SniperBot {
     const MIN_LIQUIDITY_SOL = Number(process.env.MIN_LIQUIDITY_SOL!);
 
     // Initialize components
-    const connection = new Connection(SOLANA_RPC_URL, "confirmed");
-    const walletManager = new WalletManager(connection, PRIVATE_KEY);
-    const subscriptionManager = new SubscriptionManager(walletManager);
+    this.connection = new Connection(SOLANA_RPC_URL, "confirmed");
+    this.walletManager = new WalletManager(this.connection, PRIVATE_KEY);
+    this.subscriptionManager = new SubscriptionManager(this.walletManager);
 
     // Bind shutdown to process signals
     process.on("SIGINT", this.shutdown.bind(this));
@@ -36,9 +41,17 @@ export class SniperBot {
 
     // Sell all remaining tokens
     console.log("💸 Selling all remaining tokens...");
+    (() => {
+      // Sell all tokens
+      this.subscriptionManager.addAllActiveTradesToHistory();
+    })();
 
     // Generate trade report
-    console.log("🧾 Generating trade report...");
+    showOutput({
+      activeTokens: this.subscriptionManager.getTradingHistory(),
+      walletManager: this.walletManager,
+      text: `🧾 Trade report: ${this.walletManager.getInitialBalance()} SOL -> ${this.walletManager.getBalance()} SOL`,
+    });
 
     process.exit(0);
   }

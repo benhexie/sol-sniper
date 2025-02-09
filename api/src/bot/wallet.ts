@@ -4,6 +4,7 @@ import bs58 from "bs58";
 export class WalletManager {
   private connection: Connection;
   private wallet: Keypair;
+  private initialBalance: number = 0;
   private balance: number = 0;
   private checkedBalance: boolean = false;
   public solPriceInUSD: number = 0;
@@ -35,8 +36,10 @@ export class WalletManager {
 
   async getBalance(): Promise<number> {
     if (this.checkedBalance) return this.balance;
-    await this.setBalance();
+    // await this.setBalance();
+    this.balance = 0.3; // TODO: remove this
     this.checkedBalance = true;
+    this.initialBalance = this.balance;
     return this.balance;
   }
 
@@ -48,7 +51,16 @@ export class WalletManager {
     return this.wallet;
   }
 
+  getInitialBalance(): number {
+    return this.initialBalance;
+  }
+
+  updateBalance(amount: number) {
+    this.balance += amount;
+  }
+
   private async getCurrentSolPriceInUSD() {
+    return 200;
     const response = await fetch(
       "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd"
     );
