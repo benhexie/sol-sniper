@@ -20,16 +20,21 @@ export interface Token {
   vSolInBondingCurve: number | "--";
   hit120?: boolean;
   hit200?: boolean;
+  hit240?: boolean;
+  hit300?: boolean;
   hit400?: boolean;
   rugged?: boolean;
   createdAt: Date;
   timeTo120?: number | "";
   timeTo200?: number | "";
+  timeTo240?: number | "";
+  timeTo300?: number | "";
   timeTo400?: number | "";
   timeToRug?: number | "";
   maxPrice?: number;
   buyPrice?: number;
   sellPrice?: number;
+  lastUpdate: Date;
 }
 
 export class SubscriptionManager {
@@ -77,6 +82,8 @@ export class SubscriptionManager {
       console.log("🔌 Disconnected from PumpPortal. Reconnecting...");
       setTimeout(() => this.reconnect(), 3000);
     });
+
+    this.autoSellStagnantTokens();
   }
 
   private async handleNewToken(message: any) {
@@ -106,13 +113,18 @@ export class SubscriptionManager {
       vSolInBondingCurve: "--",
       hit120: false,
       hit200: false,
+      hit240: false,
+      hit300: false,
       hit400: false,
       rugged: false,
       timeTo120: "",
       timeTo200: "",
+      timeTo240: "",
+      timeTo300: "",
       timeTo400: "",
       timeToRug: "",
       createdAt: new Date(),
+      lastUpdate: new Date(),
     };
 
     this.unverifiedTokens.push(newToken);
@@ -134,6 +146,7 @@ export class SubscriptionManager {
 
     if (isVerified) {
       const token = this.activeTrades.find((trade) => trade.mint === mint)!;
+      token.lastUpdate = new Date();
       token.marketCapSol = message.marketCapSol;
       token.currentPrice = tokenPriceInSol; // Update current price
       // Check for 50% and 100% profit milestones
@@ -151,14 +164,28 @@ export class SubscriptionManager {
         this.trader.sellToken(token);
       } else if (
         !token.rugged &&
+        !token.hit300 &&
+        Number(token.currentPrice) >= Number(token.scoutPrice) * 3
+      ) {
+        token.hit300 = true;
+        token.timeTo300 =
+          (new Date().getTime() - token.createdAt.getTime()) / 1000;
+      } else if (
+        !token.rugged &&
+        !token.hit240 &&
+        Number(token.currentPrice) >= Number(token.scoutPrice) * 2.4
+      ) {
+        token.hit240 = true;
+        token.timeTo240 =
+          (new Date().getTime() - token.createdAt.getTime()) / 1000;
+      } else if (
+        !token.rugged &&
         !token.hit200 &&
         Number(token.currentPrice) >= Number(token.scoutPrice) * 2
       ) {
         token.hit200 = true;
         token.timeTo200 =
           (new Date().getTime() - token.createdAt.getTime()) / 1000;
-        // if (Math.floor(Number(token.timeTo150)) > 1)
-        //   this.trader.sellToken(token);
       }
       if (
         !token.rugged &&
@@ -207,7 +234,7 @@ export class SubscriptionManager {
     } else {
       const token = this.unverifiedTokens.find((trade) => trade.mint === mint);
       if (!token) return;
-
+      token.lastUpdate = new Date();
       if (token.scoutPrice === "--") token.scoutPrice = tokenPriceInSol; // Set initial bought price
       token.marketCapSol = message.marketCapSol;
       token.vSolInBondingCurve = message.vSolInBondingCurve;
@@ -229,14 +256,14 @@ export class SubscriptionManager {
         return;
       }
       if (
-        (new Date().getTime() - token.createdAt.getTime() / 1000) >
+        (new Date().getTime() - token.createdAt.getTime()) / 1000 >
         MAX_TOKEN_AGE
       ) {
         showOutput({
           activeTokens: this.activeTrades,
           walletManager: this.walletManager,
           unverifiedTokens: this.unverifiedTokens,
-          text: `👴 Token is too old - Removed "${token.name}"`,
+          text: `😈 Token has high risk - Removed "${token.name}"`,
         });
         this.removeUnverifiedToken(token);
         return;
@@ -331,5 +358,20 @@ export class SubscriptionManager {
 
   clearUnverifiedTokens() {
     this.unverifiedTokens = [];
+  }
+
+  //   Auto-sell stagnant tokens
+  private autoSellStagnantTokens() {
+    let stagnantTokens: Set<string> = new Set();
+    setInterval(() => {
+      for (const token of this.activeTrades) {
+        if (token.sellPrice) continue;
+        if (stagnantTokens.has(token.mint)) continue;
+        if ((new Date().getTime() - token.lastUpdate.getTime()) / 1000 > 10) {
+          this.trader.sellToken(token);
+          stagnantTokens.add(token.mint);
+        }
+      }
+    }, 1000);
   }
 }
