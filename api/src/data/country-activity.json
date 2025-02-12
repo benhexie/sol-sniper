@@ -1,0 +1,218 @@
+{
+  "0": [
+    {
+      "region": "North America",
+      "countries": [
+        { "country": "United States", "flag": "🇺🇸" },
+        { "country": "Canada", "flag": "🇨🇦" }
+      ]
+    }
+  ],
+  "1": [
+    {
+      "region": "North America",
+      "countries": [
+        { "country": "United States", "flag": "🇺🇸" },
+        { "country": "Canada", "flag": "🇨🇦" }
+      ]
+    }
+  ],
+  "2": [
+    {
+      "region": "North America",
+      "countries": [
+        { "country": "United States", "flag": "🇺🇸" },
+        { "country": "Canada", "flag": "🇨🇦" }
+      ]
+    }
+  ],
+  "3": [
+    {
+      "region": "Asia-Pacific",
+      "countries": [
+        { "country": "Japan", "flag": "🇯🇵" },
+        { "country": "South Korea", "flag": "🇰🇷" }
+      ]
+    }
+  ],
+  "4": [
+    {
+      "region": "Asia-Pacific",
+      "countries": [
+        { "country": "Japan", "flag": "🇯🇵" },
+        { "country": "South Korea", "flag": "🇰🇷" }
+      ]
+    }
+  ],
+  "5": [
+    {
+      "region": "Asia-Pacific",
+      "countries": [
+        { "country": "China", "flag": "🇨🇳" },
+        { "country": "Singapore", "flag": "🇸🇬" }
+      ]
+    }
+  ],
+  "6": [
+    {
+      "region": "Asia-Pacific",
+      "countries": [
+        { "country": "China", "flag": "🇨🇳" },
+        { "country": "Singapore", "flag": "🇸🇬" }
+      ]
+    }
+  ],
+  "7": [
+    {
+      "region": "Asia-Pacific",
+      "countries": [
+        { "country": "Australia", "flag": "🇦🇺" },
+        { "country": "India", "flag": "🇮🇳" }
+      ]
+    }
+  ],
+  "8": [
+    {
+      "region": "Asia-Pacific",
+      "countries": [
+        { "country": "Australia", "flag": "🇦🇺" },
+        { "country": "India", "flag": "🇮🇳" }
+      ]
+    }
+  ],
+  "9": [
+    {
+      "region": "Middle East",
+      "countries": [
+        { "country": "United Arab Emirates", "flag": "🇦🇪" },
+        { "country": "Saudi Arabia", "flag": "🇸🇦" }
+      ]
+    }
+  ],
+  "10": [
+    {
+      "region": "Middle East",
+      "countries": [
+        { "country": "United Arab Emirates", "flag": "🇦🇪" },
+        { "country": "Saudi Arabia", "flag": "🇸🇦" }
+      ]
+    }
+  ],
+  "11": [
+    {
+      "region": "Europe",
+      "countries": [
+        { "country": "Germany", "flag": "🇩🇪" },
+        { "country": "France", "flag": "🇫🇷" }
+      ]
+    }
+  ],
+  "12": [
+    {
+      "region": "Europe",
+      "countries": [
+        { "country": "Germany", "flag": "🇩🇪" },
+        { "country": "France", "flag": "🇫🇷" }
+      ]
+    }
+  ],
+  "13": [
+    {
+      "region": "Europe",
+      "countries": [
+        { "country": "United Kingdom", "flag": "🇬🇧" },
+        { "country": "Netherlands", "flag": "🇳🇱" }
+      ]
+    }
+  ],
+  "14": [
+    {
+      "region": "Europe",
+      "countries": [
+        { "country": "United Kingdom", "flag": "🇬🇧" },
+        { "country": "Netherlands", "flag": "🇳🇱" }
+      ]
+    }
+  ],
+  "15": [
+    {
+      "region": "Africa",
+      "countries": [
+        { "country": "Nigeria", "flag": "🇳🇬" },
+        { "country": "South Africa", "flag": "🇿🇦" }
+      ]
+    }
+  ],
+  "16": [
+    {
+      "region": "Africa",
+      "countries": [
+        { "country": "Nigeria", "flag": "🇳🇬" },
+        { "country": "South Africa", "flag": "🇿🇦" }
+      ]
+    }
+  ],
+  "17": [
+    {
+      "region": "Africa",
+      "countries": [
+        { "country": "Nigeria", "flag": "🇳🇬" },
+        { "country": "South Africa", "flag": "🇿🇦" }
+      ]
+    }
+  ],
+  "18": [
+    {
+      "region": "North America",
+      "countries": [
+        { "country": "United States", "flag": "🇺🇸" },
+        { "country": "Canada", "flag": "🇨🇦" }
+      ]
+    }
+  ],
+  "19": [
+    {
+      "region": "North America",
+      "countries": [
+        { "country": "United States", "flag": "🇺🇸" },
+        { "country": "Canada", "flag": "🇨🇦" }
+      ]
+    }
+  ],
+  "20": [
+    {
+      "region": "North America",
+      "countries": [
+        { "country": "United States", "flag": "🇺🇸" },
+        { "country": "Canada", "flag": "🇨🇦" }
+      ]
+    }
+  ],
+  "21": [
+    {
+      "region": "North America",
+      "countries": [
+        { "country": "United States", "flag": "🇺🇸" },
+        { "country": "Canada", "flag": "🇨🇦" }
+      ]
+    }
+  ],
+  "22": [
+    {
+      "region": "North America",
+      "countries": [
+        { "country": "United States", "flag": "🇺🇸" },
+        { "country": "Canada", "flag": "🇨🇦" }
+      ]
+    }
+  ],
+  "23": [
+    {
+      "region": "North America",
+      "countries": [
+        { "country": "United States", "flag": "🇺🇸" },
+        { "country": "Canada", "flag": "🇨🇦" }
+      ]
+    }
+  ]
+}

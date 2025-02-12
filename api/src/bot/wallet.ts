@@ -1,5 +1,10 @@
 import { Connection, PublicKey, Keypair } from "@solana/web3.js";
 import bs58 from "bs58";
+import { config } from "dotenv";
+
+config();
+
+const DEV_MODE = process.env.DEV_MODE! === "true";
 
 export class WalletManager {
   private connection: Connection;
@@ -36,8 +41,8 @@ export class WalletManager {
 
   async getBalance(): Promise<number> {
     if (this.checkedBalance) return this.balance;
-    // await this.setBalance();
-    this.balance = 0.6; // TODO: remove this
+    if (DEV_MODE) this.balance = 0.6;
+    else await this.setBalance();
     this.checkedBalance = true;
     this.initialBalance = this.balance;
     return this.balance;
@@ -60,7 +65,7 @@ export class WalletManager {
   }
 
   private async getCurrentSolPriceInUSD() {
-    return 200;
+    if (DEV_MODE) return 200;
     const response = await fetch(
       "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd"
     );

@@ -23,7 +23,7 @@ export class SniperBot {
     // Initialize components
     this.connection = new Connection(SOLANA_RPC_URL, "confirmed");
     this.walletManager = new WalletManager(this.connection, PRIVATE_KEY);
-    this.subscriptionManager = new SubscriptionManager(this.walletManager);
+    this.subscriptionManager = new SubscriptionManager(this.walletManager, this.connection);
 
     readline.emitKeypressEvents(process.stdin);
     process.stdin.setRawMode(true);
@@ -33,10 +33,6 @@ export class SniperBot {
         this.shutdown.call(this);
       }
     });
-
-    // Bind shutdown to process signals
-    // process.on("SIGINT", this.shutdown.bind(this));
-    // process.on("SIGTERM", this.shutdown.bind(this));
   }
 
   start() {

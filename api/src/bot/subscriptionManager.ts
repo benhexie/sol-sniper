@@ -3,13 +3,14 @@ import { showOutput } from "./output";
 import { WalletManager } from "./wallet";
 import { Trader } from "./trader";
 import { config } from "dotenv";
+import { Connection } from "@solana/web3.js";
 config({ path: `${__dirname}/../../.env` });
 
-const MAX_ACTIVE_TRADES = Number(process.env.MAX_ACTIVE_TRADES!);
 const MAX_UNVERIFIED_TRADES = Number(process.env.MAX_UNVERIFIED_TRADES!);
 const MAX_TOKEN_AGE = Number(process.env.MAX_TOKEN_AGE!);
 const MIN_LIQUIDITY_SOL = Number(process.env.MIN_LIQUIDITY_SOL!);
 const BUY_AMOUNT_SOL = Number(process.env.BUY_AMOUNT_SOL!);
+const FEE_AMOUNT_SOL = Number(process.env.FEE_AMOUNT_SOL!);
 
 export interface Token {
   mint: string;
@@ -46,9 +47,11 @@ export class SubscriptionManager {
   private lastErrorMessage: string = "";
   private solPriceInUSD: number = 0;
   private tradingHistory: Token[] = [];
+  private connection: Connection;
 
-  constructor(walletManager: WalletManager) {
+  constructor(walletManager: WalletManager, connection: Connection) {
     this.walletManager = walletManager;
+    this.connection = connection;
     this.trader = new Trader({
       getActiveTrades: () => this.activeTrades,
       removeActiveTrade: (token: Token) => this.removeActiveTrade(token),
@@ -60,6 +63,7 @@ export class SubscriptionManager {
       unverifiedTokens: this.unverifiedTokens,
       removeUnverifiedToken: (token: Token) =>
         this.removeUnverifiedToken(token),
+      connection: this.connection,
     });
     this.ws = new WebSocket("wss://pumpportal.fun/api/data");
 
@@ -87,12 +91,12 @@ export class SubscriptionManager {
   }
 
   private async handleNewToken(message: any) {
-    if ((await this.walletManager.getBalance()) < 0.01) {
+    if ((await this.walletManager.getBalance()) < FEE_AMOUNT_SOL) {
       showOutput({
         activeTokens: this.activeTrades,
         walletManager: this.walletManager,
         unverifiedTokens: this.unverifiedTokens,
-        text: `🚨 Insufficient balance. Minimum balance is 0.01 SOL`,
+        text: `🚨 Insufficient balance. Minimum balance is FEE_AMOUNT_SOL SOL`,
       });
       return;
     }
@@ -217,7 +221,7 @@ export class SubscriptionManager {
             ((Number(token.currentPrice) - Number(token.buyPrice)) /
               Number(token.buyPrice)) *
               BUY_AMOUNT_SOL <=
-          0.01
+          FEE_AMOUNT_SOL
         ) {
           this.removeActiveTrade(token);
           return;
