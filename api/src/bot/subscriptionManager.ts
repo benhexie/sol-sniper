@@ -91,12 +91,17 @@ export class SubscriptionManager {
   }
 
   private async handleNewToken(message: any) {
-    if ((await this.walletManager.getBalance()) < FEE_AMOUNT_SOL) {
+    if (
+      (await this.walletManager.getBalance()) <
+      BUY_AMOUNT_SOL + FEE_AMOUNT_SOL
+    ) {
       showOutput({
         activeTokens: this.activeTrades,
         walletManager: this.walletManager,
         unverifiedTokens: this.unverifiedTokens,
-        text: `🚨 Insufficient balance. Minimum balance is FEE_AMOUNT_SOL SOL`,
+        text: `🚨 Insufficient balance. Minimum balance is ${
+          BUY_AMOUNT_SOL + FEE_AMOUNT_SOL
+        } SOL`,
       });
       return;
     }

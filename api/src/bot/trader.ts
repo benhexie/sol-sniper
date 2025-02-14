@@ -16,9 +16,9 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY!;
 const DEV_MODE = process.env.DEV_MODE! === "true";
 const PRIORITY_FEE_SOL = Number(process.env.PRIORITY_FEE_SOL!);
 const SLIPPAGE = Number(process.env.SLIPPAGE!);
+const PUMPPORTAL_API_KEY = process.env.PUMPPORTAL_API_KEY!;
 
 const keypair = Keypair.fromSecretKey(bs58.decode(PRIVATE_KEY!));
-const publicKey = keypair.publicKey;
 
 export class Trader {
   private getActiveTrades: () => Token[];
@@ -77,19 +77,13 @@ export class Trader {
 
   public async buyToken(token: Token) {
     try {
-      if (this.getActiveTrades().length >= MAX_ACTIVE_TRADES)
-        this.clearFinishedTrades();
-
+      this.removeUnverifiedToken(token);
       if (this.getActiveTrades().length >= MAX_ACTIVE_TRADES) {
-        this.removeUnverifiedToken(token);
-        return {
-          safe: false,
-          reason: "🧢 Trade limit reached",
-        };
+        this.clearFinishedTrades();
       }
 
-      this.addActiveTrade(token);
       token.buyPrice = token.currentPrice as number;
+      this.addActiveTrade(token);
       this.walletManager.updateBalance(-(BUY_AMOUNT_SOL + FEE_AMOUNT_SOL));
       showOutput({
         activeTokens: this.getActiveTrades(),
@@ -125,8 +119,8 @@ export class Trader {
         unverifiedTokens: this.unverifiedTokens,
       });
 
-      this.addTradingHistory(token);
       token.sellPrice = token.currentPrice as number;
+      this.addTradingHistory(token);
       let buyPrice = Number(token.buyPrice);
       const sellPrice = Number(token.sellPrice);
 
@@ -211,22 +205,24 @@ export class Trader {
     amount: number | "100%",
     denominatedInSol: "true" | "false"
   ) {
-    const response = await fetch(`https://pumpportal.fun/api/trade-local`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        publicKey,
-        action,
-        mint: ca,
-        denominatedInSol,
-        amount,
-        slippage: SLIPPAGE,
-        priorityFee: PRIORITY_FEE_SOL,
-        pool: "pump",
-      }),
-    });
+    const response = await fetch(
+      `https://pumpportal.fun/api/trade?api-key=${PUMPPORTAL_API_KEY}`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          action,
+          mint: ca,
+          amount,
+          denominatedInSol,
+          slippage: SLIPPAGE,
+          priorityFee: PRIORITY_FEE_SOL,
+          pool: "pump",
+        }),
+      }
+    );
     if (response.status === 200) {
       const data = await response.arrayBuffer();
       const tx = VersionedTransaction.deserialize(new Uint8Array(data));
