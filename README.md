@@ -84,7 +84,8 @@ DEV_MODE=true
 Start the bot:
 
 ```bash
-npm start
+cd api/
+npm run dev
 ```
 
 ## 📊 Trading Strategy
